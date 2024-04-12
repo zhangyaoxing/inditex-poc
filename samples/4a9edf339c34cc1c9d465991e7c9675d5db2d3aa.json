@@ -1,0 +1,1813 @@
+{
+    "paper_id": "4a9edf339c34cc1c9d465991e7c9675d5db2d3aa",
+    "metadata": {
+        "title": "Relationship of cytochrome P450 gene polymorphisms with blood concentrations of hydroxychloroquine and its metabolites and adverse drug reactions",
+        "authors": [
+            {
+                "first": "Beibei",
+                "middle": [],
+                "last": "Gao",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Tingfei",
+                "middle": [],
+                "last": "Tan",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Xi",
+                "middle": [],
+                "last": "Cao",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Menglu",
+                "middle": [],
+                "last": "Pan",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Chunlan",
+                "middle": [],
+                "last": "Yang",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Jianxiong",
+                "middle": [],
+                "last": "Wang",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Zongwen",
+                "middle": [],
+                "last": "Shuai",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Quan",
+                "middle": [],
+                "last": "Xia",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "Background: Hydroxychloroquine (HCQ) is a cornerstone therapy for systemic lupus erythematosus (SLE) and rheumatoid arthritis (RA). This study aimed to investigate the relationship of cytochrome P450 (CYP450) gene polymorphisms with blood concentrations of HCQ and its metabolites and adverse drug reactions (ADRs) in patients with SLE and RA.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        },
+        {
+            "text": "Methods: A cohort of 146 patients with SLE and RA treated with HCQ was reviewed. The ADRs of the patients were recorded. The blood concentrations of HCQ and its metabolites were measured by liquid chromatography-tandem mass spectrometry (LC-MS/MS) analysis. Genotyping of single nucleotide polymorphisms (SNPs) in CYP450, a metabolic enzyme involved in the HCQ metabolic pathway, was performed using a MassARRAY system. The chi-square test, T-test, and one-way analysis of variance were used to analyse data.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        },
+        {
+            "text": "Among 29 candidate SNPs, we found that CYP3A4 (rs3735451) was significantly associated with blood levels of HCQ and its metabolites in both the unadjusted model and adjusted model (patients taking HCQ for > 10 years) (P < 0.05). For CYP3A5 (rs776746), a greater risk of skin and mucous membrane ADRs was associated with the TT genotype than with the CT + CC genotypes (P = 0.033). For CYP2C8 (rs1058932), the AG genotype carried a greater risk of abnormal renal function than the AA + GG genotype (P = 0.017); for rs10882526, the GG genotype carried a greater risk of ophthalmic ADRs than the AA + AG genotypes (P = 0.026).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        },
+        {
+            "text": "The CYP2C8 (rs1058932 and rs10882526) and CYP3A5 (rs776746) polymorphisms are likely involved in the ADRs of HCQ. Gene polymorphism analysis of CYP450 and therapeutic drug monitoring of HCQ and its metabolites might be useful to optimise HCQ administration and predict ADRs.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "Autoimmune diseases such as systemic lupus erythematosus (SLE) and rheumatoid arthritis (RA) are caused by immune tolerance deficiency or abnormal immune regulation and lead to damage of the host organs [1] . Glucocorticoids (GCs) and disease-modifying anti-rheumatic drugs (DMARDs) are routinely prescribed treatments that have shown good therapeutic effects on disease control [2] . Currently, non-biological DMARDs like azathioprine, methotrexate (MTX), and hydroxychloroquine (HCQ) play a role in relieving pain and inhibiting disease progression [3] . Among these drugs, HCQ was initially used as an antimalarial medication and then translated to rheumatic diseases. Currently, HCQ is the mainstay treatment for SLE; according to the latest European guidelines, it is recommended for all SLE patients unless contraindicated or with adverse effects [4] . The latest European League Against Rheumatism (EULAR) recommendations stated that HCQ was also part of the triple therapy in RA, where it is combined with methotrexate and sulfasalazine to increase the response rate [5] . Despite the efficacy of HCQ in treating manifestations of SLE and RA, common side effects such as headaches, dizziness, gastrointestinal symptoms, and rash have been reported [6] . Notably, retinopathy is a serious side effect of HCQ, and regular ophthalmologic monitoring is recommended for patients on long-term HCQ therapy [7, 8] .",
+            "cite_spans": [
+                {
+                    "start": 203,
+                    "end": 206,
+                    "text": "[1]",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 379,
+                    "end": 382,
+                    "text": "[2]",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 551,
+                    "end": 554,
+                    "text": "[3]",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 853,
+                    "end": 856,
+                    "text": "[4]",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 1075,
+                    "end": 1078,
+                    "text": "[5]",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 1256,
+                    "end": 1259,
+                    "text": "[6]",
+                    "ref_id": "BIBREF8"
+                },
+                {
+                    "start": 1407,
+                    "end": 1410,
+                    "text": "[7,",
+                    "ref_id": "BIBREF9"
+                },
+                {
+                    "start": 1411,
+                    "end": 1413,
+                    "text": "8]",
+                    "ref_id": "BIBREF10"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "HCQ shows large interindividual variations in its blood concentration, despite individuals taking the same dose. For SLE patients on long-term oral HCQ treatment, a lower SLE disease activity index (SLE-DAI) score was significantly associated with higher blood HCQ concentration [9] . Moreover, metabolites of HCQ such as desethyl hydroxychloroquine (DHCQ) and desethyl chloroquine (DCQ) exhibited a concentration-dependent relationship in patients with RA; bisdesethyl chloroquine (BDCQ) has also been implicated in HCQ toxicity [10] . HCQ is metabolized into DHCQ, DCQ, and BDCQ by cytochrome P450 enzymes (CYP450s) 3A4/5, 2C8, and 2D6 in vivo by N-deethylation [11] , in which DHCQ is the major metabolite and the activated form of HCQ. The CYP 2D6*10 (rs1065852) polymorphism is significantly associated with the level of DHCQ, while CYP3A5*3 (rs776746) and CYP 3A4*18 (rs28371759) did not show any significant association with the levels of HCQ and DHCQ [12] . However, to our knowledge, few studies thus far have reported the relationship between the adverse drug reactions (ADRs) of HCQ and CYP450 polymorphisms [13] . Understanding this relationship will be helpful to refine HCQ dosage. Therefore, we analysed the influence of CYP450 gene polymorphisms, mainly the 2D6, 3A4, 3A5, and 2C8 polymorphisms, on the blood concentrations of HCQ and its metabolites, as well as the risk of ADRs.",
+            "cite_spans": [
+                {
+                    "start": 279,
+                    "end": 282,
+                    "text": "[9]",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 530,
+                    "end": 534,
+                    "text": "[10]",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 664,
+                    "end": 668,
+                    "text": "[11]",
+                    "ref_id": "BIBREF13"
+                },
+                {
+                    "start": 959,
+                    "end": 963,
+                    "text": "[12]",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 1119,
+                    "end": 1123,
+                    "text": "[13]",
+                    "ref_id": "BIBREF15"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "This was a prospective, observational, single-centre clinical trial designed to examine the influence of CYP450 gene polymorphisms on the blood concentrations and ADRs of HCQ and its metabolites. The study subjects were from the Outpatient Department of Rheumatology and Immunology at the First Affiliated Hospital of Anhui Medical University and who had been taking long-term oral HCQ. The patients' general and clinical details were recorded in detail. The inclusion criteria for SLE and RA were as follows: patients met either the 2010 RA classification criteria defined by the American College of Rheumatology (ACR) and the EULAR, or the EULAR/ACR-2019 for SLE [14, 15] ; received treatment with oral HCQ for > 6 months; were on a daily dosage of 200-400 mg; and consented to donate blood samples for the study. The exclusion criteria were as follows: non-SLE and non-RA patients; pregnant and lactating women; patients with incomplete data; patients with poor compliance; and those with renal impairments, eye disease, or cutaneous damage before receiving HCQ. Blood samples (10 mL) were collected during an outpatient visit for determining HCQ, DHCQ, DCQ, and BDCQ blood concentrations and genetic testing. The following laboratory tests were conducted: complete blood cell count, erythrocyte sedimentation rate, C-reactive protein level, levels of C3 and C4, and anti-double-stranded DNA antibody titre.",
+            "cite_spans": [
+                {
+                    "start": 665,
+                    "end": 669,
+                    "text": "[14,",
+                    "ref_id": "BIBREF16"
+                },
+                {
+                    "start": 670,
+                    "end": 673,
+                    "text": "15]",
+                    "ref_id": "BIBREF17"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Study design and population"
+        },
+        {
+            "text": "We measured the blood concentrations of HCQ, DHCQ, DCQ, and BDCQ at Anhui Medical University Scientific Research Experiment Center (Anhui Medical University, Hefei City, China) with Liquid chromatography-tandem mass spectrometry (LC-MS/MS), according to the method of Chhonker et al. [16] , by using an AB Sciex 5500 LC-30AD pump SIL-30AC autosampler (AB SCIEX, Los Angeles, CA, USA). The analytes were separated on a Poroshell 120 EC-C18 (2.1 \u00d7 100 mm, 2.7-\u03bcm thickness, Agilent Technologies, CA, USA), at a column temperature of 35 \u00b0C and flow rate of 0.25 mL/min. The internal standard for the LC-MS/MS assay was quinine. The MS data of blood separated by the above-mentioned optimised high-performance liquid chromatography (HPLC) method were processed using the Analyst 1.6.3 data processing software system (AB SCIEX, Los Angeles, CA, USA). According to the internal standard method, the standard curve was established in order to calculate the blood levels of HCQ, DHCQ, DCQ, and BDCQ.",
+            "cite_spans": [
+                {
+                    "start": 284,
+                    "end": 288,
+                    "text": "[16]",
+                    "ref_id": "BIBREF18"
+                }
+            ],
+            "ref_spans": [],
+            "section": "LC-MS/MS analysis of HCQ, DHCQ, DCQ, and BDCQ blood levels"
+        },
+        {
+            "text": "The ADRs evaluation form for SLE and RA patients on HCQ was designed according to the World Health Organization-Uppsala Monitoring Centre (WHO-UMC) system [17] and recorded in our study. Patients with serious side effects were assigned to a specialist clinic for further treatment and regular follow-up until symptoms were stable.",
+            "cite_spans": [
+                {
+                    "start": 155,
+                    "end": 159,
+                    "text": "[17]",
+                    "ref_id": "BIBREF19"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Evaluation of ADRs"
+        },
+        {
+            "text": "Genomic DNA was extracted using a commercially available DNA extraction kit (Tiangen Biotech, Beijing, China) according to the manufacturer's instructions. The extracted genomic DNA was then stored at \u2212 20 \u00b0C until analysis.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "DNA extraction and genotyping of CYP SNPs"
+        },
+        {
+            "text": "Polymerase chain reaction (PCR) primers and singlebase extension primers were designed according to the Assay Design Suite V2.0 (Sequenom) online software (http:// www. myseq uenom. com). In this study, a total of 29 SNPs from four CYP450s were selected for genetic polymorphism analysis: CYP3A4 (rs28371759, rs4646440, rs4646437, rs3735451, rs2246709, and rs2242480); CYP3A5 (rs1419745, rs4646450, rs15524, rs776746, and rs3800959); CYP2C8 (rs2071426, rs17110453, rs1341159, rs1557044, rs10772526, rs6583969, rs11572139, rs7909236, rs2185571, rs1934952, rs11572162, and rs1058932); and CYP2D6 (rs28371699, rs4078247, rs28670611, rs1080983, rs35028622, and rs5758589). SNP typing was completed on a MassARRAY system (Sequenom), which was based on matrix-assisted laser desorption ionization time-of-flight mass spectrometry (MALDI-TOF). The PCR amplification conditions were as follows: predenaturation at 95 \u00b0C for 5 min; followed by 25 cycles of denaturation at 95 \u00b0C for 30 s, annealing at 58 \u00b0C for 30 s, extension at 72 \u00b0C for 1 min; and a final extension at 72 \u00b0C for 5 min. The final results were genotyped using the MassARRAY Typer 4.0 software system (Sequenom Inc., San Diego, CA, USA).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "DNA extraction and genotyping of CYP SNPs"
+        },
+        {
+            "text": "Data were analysed using IBM SPSS Statistics (version 26, IBM Corporation, Armonk, NY, USA). Quantitative data were presented as mean and standard deviation, while qualitative data were presented as number and percentage. The chi-square test was used to compare the Hardy-Weinberg equilibria and adverse reactions of patients with different genotypes, and T-tests and oneway analysis of variance were used to compare the blood concentration of HCQ among groups. P < 0.05 was considered to indicate statistical significance.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Statistical analysis"
+        },
+        {
+            "text": "A total of 146 participants (n = 121 SLE and n = 25 RA; 7 male and 139 female; mean age: 42.27 \u00b1 14.13 years) with pathologic diagnosis were enrolled. The characteristics of the patients are shown in Table 1 . The mean duration of oral HCQ was 51.70 \u00b1 46.50 months, and the mean daily dose of HCQ was 255.48 \u00b1 77.93 mg/day. The mean disease activity score 28 (DSA28) score of RA patients was 2.16 \u00b1 0.41, and the mean SLEDAI score of SLE patients was 0.89 \u00b1 1.81, which suggests that most participants had mild disease (DSA28 < 3.2 and SLE-DAI < 9). The plasma concentrations of HCQ, DHCQ, DCQ, and BDCQ were 838.10 \u00b1 522.00, 582.80 \u00b1 363.90, 346.90 \u00b1 205.30, and 56.00 \u00b1 39.30 ng/ml, respectively. Grouped according to the dosage of patients, the results showed that blood concentrations of HCQ, DHCQ, DCQ, and BDCQ were significantly associated with the daily HCQ dosage (P < 0.005) (Fig. 1 ). The relationships between blood concentrations of HCQ, DHCQ, DCQ, and BDCQ and the duration of oral HCQ are shown in Fig. 2a -d, respectively. The blood concentrations of HCQ, DHCQ, DCQ, and BDCQ also showed a significant correlation (P < 0.005). The distribution of ADRs among all patients was as follows: abnormal renal function (n = 21), abnormal liver function (n = 11), ophthalmic ADRs (n = 20), and skin and mucous membrane ADRs (n = 15).",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 200,
+                    "end": 207,
+                    "text": "Table 1",
+                    "ref_id": "TABREF0"
+                },
+                {
+                    "start": 885,
+                    "end": 892,
+                    "text": "(Fig. 1",
+                    "ref_id": "FIGREF0"
+                },
+                {
+                    "start": 1013,
+                    "end": 1020,
+                    "text": "Fig. 2a",
+                    "ref_id": "FIGREF1"
+                }
+            ],
+            "section": "Patient characteristics"
+        },
+        {
+            "text": "The genotype distribution based on HWE is shown in Table 2 . The genotyping results of the 29 SNPs in 146 SLE and RA patients showed that the allele frequencies of the 23 SNPs were consistent with HWE (P > 0.05), and the observed and expected values of alleles and genotypes showed good agreement, which indicates that the samples included in this study were representative of the population. CYP 2C8 (rs1341159) and CYP2D6 (rs28371699, rs4078247, rs35028622, rs28670611, and rs1080983) were not found other mutations (P < 0.05); therefore, no statistical analysis was required.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 51,
+                    "end": 58,
+                    "text": "Table 2",
+                    "ref_id": "TABREF1"
+                }
+            ],
+            "section": "Hardy-Weinberg equilibrium (HWE)"
+        },
+        {
+            "text": "Samples from 146 patients with SLE and RA were used to analyse the association of SNPs with the risk of ADRs. In the genotype distribution analysis, CYP2C8 (rs1058932 and rs10882526), CYP3A5 (rs776746), and CYP3A4 (rs3735451) were related to ADRs. The frequencies of these polymorphisms are shown in Table 3 . The ADRs of patients with CYP2C8 (rs1058932), CYP2C8 (rs10882526) and CYP3A5 (rs776746) genotype are shown in Table 4 . Only 21 patients with abnormal renal function were included in the analysis of SNPs. Abnormal renal function was more prevalent in the AG genotype than with the AA genotype and GG genotype of CYP2C8 (rs1058932) (P = 0.017), while no significant differences between the different genotypes of CYP3A4 and CYP3A5 were noted (P > 0.05). CYP2C8 (rs10882526) is related to ophthalmic ADRs; the risk of the AA genotype was greater than that of the GG and AG genotypes (P = 0.026), while different genotypes of CYP3A4 and CYP3A5 showed no significant difference between normal and abnormal groups (P > 0.05). CYP3A5 (rs776746) was associated with the incidence of skin and mucous membrane ADRs in our research (P = 0.033), and the risk of the TT genotype was greater than that of the CC and CT genotypes; no significant difference was noted between the normal and abnormal skin and mucous membrane ADRs in different genotypes of CYP3A4 and CYP2C8 (P > 0.05). For the incidence rate of abnormal liver function, there was no significant difference for selected SNPs (P > 0.05).",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 300,
+                    "end": 307,
+                    "text": "Table 3",
+                    "ref_id": "TABREF2"
+                },
+                {
+                    "start": 420,
+                    "end": 427,
+                    "text": "Table 4",
+                    "ref_id": "TABREF3"
+                }
+            ],
+            "section": "Relationship between CYP450 gene polymorphisms and ADRs"
+        },
+        {
+            "text": "In the unadjusted model (patients taking medication for \u2264 10 years), only the CYP3A4 (rs3735451) polymorphism showed significant differences in the blood concentrations of HCQ, DCQ, and BDCQ (P = 0.033, P = 0.039, and P = 0.033). The mean blood concentrations of HCQ in SLE and RA patients with different CYP3A4 (rs3735451) genotypes are shown in Table 5 . The HCQ, DCQ, and BDCQ concentrations were higher in patients with the CC genotype than those with the CT genotype. After adjusting for HCQ medication time (patients taking medication for > 10 years), this significant correlation still existed. For HCQ, DCQ, and BDCQ, the comparison between the CC and CT genotypes in patients was statistically significant (P < 0.05) (Fig. 3) . The relationship between the genotypes of CYP3A4 (rs3735451) and the mean blood concentrations of HCQ, DHCQ, and DCQ were TT > CT > CC, while the CC genotype showed lower concentration than the other two genotypes of BDCQ.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 347,
+                    "end": 354,
+                    "text": "Table 5",
+                    "ref_id": "TABREF4"
+                },
+                {
+                    "start": 726,
+                    "end": 734,
+                    "text": "(Fig. 3)",
+                    "ref_id": null
+                }
+            ],
+            "section": "Relationship between CYP450 gene polymorphisms and blood concentrations of HCQ and its metabolites"
+        },
+        {
+            "text": "HCQ is a hydroxyl derivative of chloroquine (CQ) and has a similar antimalarial activity to CQ. However, because HCQ has low toxicity, it can be used in the longterm treatment of SLE and RA. The plasma elimination half-life of HCQ is about 40-60 days, with higher tissue distribution and longer residence time in vivo [18] . Despite the potential efficacy and relative safety, the indications for and dosage of HCQ should be strictly controlled in clinical treatment. Furthermore, the ADRs should be closely observed, and HCQ blood levels of patients should be measured at regular intervals if necessary [19] . Studies have shown that there is a positive correlation between the efficacy of HCQ and its blood concentration. HCQ shows large inter-individual variations in its concentration, even in individuals taking the same dose [10] . About 40% of patients are unresponsive or intolerant to HCQ [20] . HCQ is mainly deacetylated by CYP450 enzymes 2D6, 2C8, and CYP3A4/5 [11, 12] ; therefore, genetic polymorphisms of HCQ metabolic enzymes may be an important factor that affects individual concentration differences. Lee et al. [12] studied the effect of CYP2D6 gene polymorphisms on the blood concentration of HCQ in patients with SLE. They found a significant correlation between rs1065852 and rs1135840 and the ratio of DHCQ:HCQ, which indicates that the blood concentration of HCQ is related to the CYP2D6 gene polymorphism, but no similar results were found in CYP3A5*3 (rs776746) and CYP3A4*18B (rs28371759). Although some studies have reported that there was no significant correlation between CYP2C8 gene polymorphism and patients' response to HCQ [10] , our previous research showed that SLE patients with the CYP2C8 (rs10882521) GT genotype who took the same dose of HCQ had lower blood concentration than those with other genotypes, indicating that this SNP is related to the blood concentration of HCQ [21] . CYP3A4 is the most abundant CYP450 enzyme in the human liver, accounting for about 80% of the total CYP450 enzymes. The newly discovered CYP3A4*1G (rs2242480) is the site with the highest mutation frequency in the CYP3A4 allele, and the CYP3A4*1G gene polymorphism can reduce the catalytic activity of the CYP3A4 enzyme [22] . In our present study, a correlation between CYP3A4 (rs28371759) and (rs2242480) gene polymorphism and blood concentration of HCQ was not found, which was consistent with the results reported in the literature [12] . We found that CYP3A4 (rs3735451) was significantly correlated with blood concentration of HCQ and its metabolites by adjusting for the time of administration, and the mean blood concentrations of HCQ, DHCQ, and DCQ in patients with CC, CT, and TT genotypes is higher than those of other genotypes, with the blood concentration of HCQ and its main metabolite DHCQ being the lowest for the CC genotype. It is suggested that for patients with CYP3A4 (rs3735451) site mutation, a higher dose may be needed in clinical treatment to achieve an effective blood concentration and therapeutic effect.",
+            "cite_spans": [
+                {
+                    "start": 318,
+                    "end": 322,
+                    "text": "[18]",
+                    "ref_id": "BIBREF20"
+                },
+                {
+                    "start": 604,
+                    "end": 608,
+                    "text": "[19]",
+                    "ref_id": "BIBREF21"
+                },
+                {
+                    "start": 831,
+                    "end": 835,
+                    "text": "[10]",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 898,
+                    "end": 902,
+                    "text": "[20]",
+                    "ref_id": "BIBREF22"
+                },
+                {
+                    "start": 973,
+                    "end": 977,
+                    "text": "[11,",
+                    "ref_id": "BIBREF13"
+                },
+                {
+                    "start": 978,
+                    "end": 981,
+                    "text": "12]",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 1131,
+                    "end": 1135,
+                    "text": "[12]",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 1659,
+                    "end": 1663,
+                    "text": "[10]",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 1917,
+                    "end": 1921,
+                    "text": "[21]",
+                    "ref_id": "BIBREF23"
+                },
+                {
+                    "start": 2244,
+                    "end": 2248,
+                    "text": "[22]",
+                    "ref_id": "BIBREF24"
+                },
+                {
+                    "start": 2460,
+                    "end": 2464,
+                    "text": "[12]",
+                    "ref_id": "BIBREF14"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "Common ADRs are listed in the manual of HCQ sulfate tablets, including vision, skin, gastrointestinal tract, central nervous system, neuromuscular, cardiovascular system, haematological, liver, and other allergic reactions [6, 23] . In fact, Munster et al. [10] found a correlation between gastrointestinal adverse events and elevated blood HCQ levels, and a potential relationship between ophthalmic adverse events and BDCQ levels. The incidence of ophthalmic ADRs in the previous literature was 7.5% [24] ; the incidence in our present study was 14.4%, significantly higher than that previously reported. This may be due to the inclusion of more ophthalmic ADRs in our study, such as eye swelling, hyperaemia, blurred vision, and conscious ametropia. However, until now, there have been only a few reports on the association between ADRs of HCQ and CYP450 gene polymorphisms. In this study, we found a significant difference in the distribution of the CYP2C8 (rs10882526) GG genotype and AA + AG genotypes in the ophthalmic ADR group (P < 0.05), and the incidence of ADRs for the GG genotype was higher than that of the AA + AG genotypes. The most important predictors of ophthalmic ADRs in patients are high doses and long-term use of HCQ; hence, mandatory ophthalmic evaluation should be performed during long-term use of HCQ to ensure drug safety [25] .",
+            "cite_spans": [
+                {
+                    "start": 223,
+                    "end": 226,
+                    "text": "[6,",
+                    "ref_id": "BIBREF8"
+                },
+                {
+                    "start": 227,
+                    "end": 230,
+                    "text": "23]",
+                    "ref_id": "BIBREF25"
+                },
+                {
+                    "start": 257,
+                    "end": 261,
+                    "text": "[10]",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 502,
+                    "end": 506,
+                    "text": "[24]",
+                    "ref_id": "BIBREF26"
+                },
+                {
+                    "start": 1352,
+                    "end": 1356,
+                    "text": "[25]",
+                    "ref_id": "BIBREF27"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "HCQ is eventually excreted via the kidney. The reduced clearance in patients with renal insufficiency leads to HCQ accumulation in the body, significantly increasing the blood concentration after medication and the risk of drug poisoning. However, the dosage of HCQ in patients with renal insufficiency is not clear [26] . In this study, we analysed the relationship between CYP2C8 gene polymorphism and renal dysfunction. This showed a significant difference in the distribution of the AG genotype and AA + GG genotypes of CYP2C8 (rs1058932) between the normal and abnormal renal function groups. In addition, the distribution of the CYP3A5 (rs776746) TT genotype and CT + CC genotypes in patients with long-term HCQ use was significantly different from that in the normal group (P < 0.05). There are few reports about liver injury caused by HCQ; these mainly include liver drug enzyme abnormality and acute liver failure [27, Fig. 3 The distribution of HCQ blood concentration in different genotype groups in the adjusted model. a The distribution of HCQ in different genotype groups. The CC genotype group showed significantly higher concentration than the CT genotype group (P < 0.05), but no significant difference in the CT, TT genotype groups (P > 0.05). b The distribution of DHCQ in different genotype groups. There was no significant difference in the CC, CT and TT genotype groups (P > 0.05). c The distribution of DCQ in different genotype groups. The CC genotype group showed significantly higher concentrations than the CT genotype group (P < 0.05), but there was no significant difference in the CT and TT genotype groups (P > 0.05). d The distribution of BDCQ in different genotype groups. The CC genotype group showed significantly higher concentrations than the CT genotype groups (P < 0.05), but there was no significant difference in the CT and TT genotype groups (P > 0.05) 28]. Abnormal liver function, manifested by liver enzyme increase (aspartate aminotransferase, AST), was found in 11 patients in our study, but no influence of CYP450 gene polymorphism was found. A possible reason for this was that we only took the dose and course of treatment into account, and the combined medication was not considered. These results suggest that patients should regularly monitor their liver function during HCQ treatment and should reduce the dose or stop medication if necessary.",
+            "cite_spans": [
+                {
+                    "start": 316,
+                    "end": 320,
+                    "text": "[26]",
+                    "ref_id": "BIBREF28"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 928,
+                    "end": 934,
+                    "text": "Fig. 3",
+                    "ref_id": null
+                }
+            ],
+            "section": "Discussion"
+        },
+        {
+            "text": "An earlier study showed that the DHCQ: HCQ ratio was associated with CYP2D6 (rs1065852 and rs1135840) polymorphisms after taking oral HCQ [12] . Our result was not consistent with that from a previous study, and we could not examine this polymorphism in our study because the frequency of CYP2D6 polymorphisms was confirmed to be extremely low in our study population (based on HWE analysis). Another possible limitation is the limited sample size in our study. Still, further studies that relate gene polymorphisms to HCQ metabolism and ADRs are needed to confirm our findings and discover more promising candidate SNPs.",
+            "cite_spans": [
+                {
+                    "start": 138,
+                    "end": 142,
+                    "text": "[12]",
+                    "ref_id": "BIBREF14"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "The gene polymorphisms of the CYP enzyme may be important determinant of drug sensitivity and ADRs among different individuals. In the clinic, patients with the CYP2C8 (rs1058932) AG genotype had a higher incidence of renal dysfunction than those with the AA and GG genotypes after taking HCQ. Patients with the CYP2C8 (rs10882526) GG genotype had a higher incidence of ophthalmic ADRs than AA genotype and AG genotypes after taking HCQ. In addition, patients with the CYP3A5 (rs776746) TT genotype had a higher incidence of skin and mucosal ADRs than the CC and CT genotypes after taking HCQ. Given the same dose of HCQ, the blood concentration of HCQ in patients with the CYP3A4 (rs3735451) CC genotype was lower than that in patients with other genotypes. Thus, it may be helpful to improve the efficacy and reduce the ADRs by genotyping the relevant CYP450 gene polymorphisms before administration of HCQ and monitoring the concentration of HCQ and its metabolites. Physicians should try to offer individualised treatment with HCQ based on the results of CYP2C8 (rs1058932 and rs10882526), CYP3A4 (rs3735451), and CYP3A5 (rs776746) genotyping and HCQ blood concentration. ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Discussion"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "Insights into the involvement of circular RNAs in autoimmune diseases",
+            "authors": [
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Zhai",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Xin",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Cao",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Lu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "Front Immunol",
+            "volume": "12",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.3389/fimmu.2021.622316"
+                ]
+            }
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "The effects of DMARDs on the expression and function of P-gp, MRPs, BCRP in the treatment of autoimmune diseases",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Wu",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Wei",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "An update on disease modifying antirheumatic drugs",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Joshi",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Dhaneshwar",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Inflamm Aller Drug Targets",
+            "volume": "13",
+            "issn": "4",
+            "pages": "249--61",
+            "other_ids": {
+                "DOI": [
+                    "10.2174/187152811304140915152102"
+                ]
+            }
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "Hydroxychloroquine in systemic and autoimmune diseases: where are we now?",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Dima",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Jurcut",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Arnaud",
+                    "suffix": ""
+                }
+            ],
+            "year": 2021,
+            "venue": "Joint Bone Spine",
+            "volume": "88",
+            "issn": "3",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.jbspin.2021.105143"
+                ]
+            }
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "2019 update of EULAR recommendations for vaccination in adult patients with autoimmune inflammatory rheumatic diseases",
+            "authors": [
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Furer",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Rondaan",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Heijstek",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Agmon-Levin",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Van Assen",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Bijl",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "convenient online submission \u2022 thorough peer review by experienced researchers in your field \u2022 rapid publication on acceptance \u2022 support for research data, including large and complex data types \u2022 gold Open Access which fosters wider collaboration and increased citations maximum visibility for your research: over 100M website views per year submit your research ?",
+            "authors": [
+                {
+                    "first": "\u2022",
+                    "middle": [],
+                    "last": "Fast",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "Choose BMC and benefit from: ? Choose BMC and benefit from",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "Plaquenil hydroxychloroquine sulfate tablets",
+            "authors": [
+                {
+                    "first": "",
+                    "middle": [
+                        "U S"
+                    ],
+                    "last": "Website",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "The risk of toxic retinopathy in patients on longterm hydroxychloroquine therapy",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Melles",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Marmor",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "JAMA Ophthalmol",
+            "volume": "132",
+            "issn": "12",
+            "pages": "1453--60",
+            "other_ids": {
+                "DOI": [
+                    "10.1001/jamaophthalmol.2014.3459"
+                ]
+            }
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "Retinal toxicity found in a patient with systemic lupus erythematosus prior to 5 years of treatment with hydroxychloroquine",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Chiang",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Jampol",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Fawzi",
+                    "suffix": ""
+                }
+            ],
+            "year": 2001,
+            "venue": "Rheumatology (Oxford)",
+            "volume": "53",
+            "issn": "11",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1093/rheumatology/keu317"
+                ]
+            }
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "Efficacy and safety of hydroxychloroquine therapy for systemic lupus erythematosus patients depend on administration dose",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Wakiya",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Kameda",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Nakashima",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Shimada",
+                    "suffix": ""
+                },
+                {
+                    "first": "Fahmy",
+                    "middle": [],
+                    "last": "Mansour",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Kato",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Intern Med",
+            "volume": "59",
+            "issn": "17",
+            "pages": "4317--4336",
+            "other_ids": {
+                "DOI": [
+                    "10.2169/internalmedicine.4317-19"
+                ]
+            }
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "Hydroxychloroquine concentration-response relationships in patients with rheumatoid arthritis",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Munster",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Gibbs",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Shen",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Baethge",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Botstein",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Caldwell",
+                    "suffix": ""
+                }
+            ],
+            "year": 2002,
+            "venue": "Arthritis Rheum",
+            "volume": "46",
+            "issn": "6",
+            "pages": "1460--1469",
+            "other_ids": {
+                "DOI": [
+                    "10.1002/art.10307"
+                ]
+            }
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "Metabolism and interactions of chloroquine and hydroxychloroquine with human cytochrome P450 enzymes and drug transporters",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Rendic",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Guengerich",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Curr Drug Metab",
+            "volume": "21",
+            "issn": "14",
+            "pages": "221--99920",
+            "other_ids": {
+                "DOI": [
+                    "10.2174/1389200221999201208211537"
+                ]
+            }
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "Association of polymorphisms of cytochrome P450 2D6 with blood hydroxychloroquine levels in patients with systemic lupus erythematosus",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Lee",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Vinayagamoorthy",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Han",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Kwok",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Ju",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Park",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Arthritis Rheumatol",
+            "volume": "68",
+            "issn": "1",
+            "pages": "184--90",
+            "other_ids": {
+                "DOI": [
+                    "10.1002/art.39402"
+                ]
+            }
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "Molecular effects and retinopathy induced by hydroxychloroquine during SARS-CoV-2 therapy: role of CYP450 isoforms and epigenetic modulations",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Paniri",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Hosseini",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Rasoulinejad",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Akhavan-Niaki",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Eur J Pharmacol",
+            "volume": "886",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.ejphar.2020.173454"
+                ]
+            }
+        },
+        "BIBREF16": {
+            "ref_id": "b16",
+            "title": "ACR/EULAR 2010 rheumatoid arthritis classification criteria",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Kay",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Upchurch",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "Rheumatology (Oxford)",
+            "volume": "51",
+            "issn": "",
+            "pages": "5--9",
+            "other_ids": {
+                "DOI": [
+                    "10.1093/rheumatology/kes279"
+                ]
+            }
+        },
+        "BIBREF17": {
+            "ref_id": "b17",
+            "title": "2019 update of the EULAR recommendations for the management of systemic lupus erythematosus",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Fanouriakis",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Kostopoulou",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Alunno",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Aringer",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Bajema",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "N"
+                    ],
+                    "last": "Boletis",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Cervera",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Ann Rheum Dis",
+            "volume": "78",
+            "issn": "6",
+            "pages": "736--781",
+            "other_ids": {
+                "DOI": [
+                    "10.1136/annrheumdis-2019-215089"
+                ]
+            }
+        },
+        "BIBREF18": {
+            "ref_id": "b18",
+            "title": "Simultaneous quantitation of hydroxychloroquine and its metabolites in mouse blood and tissues using LC-ESI-MS/MS: an application for pharmacokinetic studies",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Chhonker",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Sleightholm",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Oupick\u00fd",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Murry",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "J Chromatogr B Anal Technol Biomed Life Sci",
+            "volume": "1072",
+            "issn": "",
+            "pages": "320--327",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.jchromb.2017.11.026"
+                ]
+            }
+        },
+        "BIBREF19": {
+            "ref_id": "b19",
+            "title": "Uppsala Monitoring Centre",
+            "authors": [],
+            "year": 1978,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF20": {
+            "ref_id": "b20",
+            "title": "Therapy and pharmacological properties of hydroxychloroquine and chloroquine in treatment of systemic lupus erythematosus, rheumatoid arthritis and related diseases",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Rainsford",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Parke",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Clifford-Rashotte",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Kean",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Inflamm Pharmacol",
+            "volume": "23",
+            "issn": "5",
+            "pages": "231--69",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/s10787-015-0239-y"
+                ]
+            }
+        },
+        "BIBREF21": {
+            "ref_id": "b21",
+            "title": "Hydroxychloroquine blood levels in systemic lupus erythematosus: clarifying dosing controversies and improving adherence",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Durcan",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Clarke",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Magder",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Petri",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "J Rheumatol",
+            "volume": "42",
+            "issn": "11",
+            "pages": "2092--2099",
+            "other_ids": {
+                "DOI": [
+                    "10.3899/jrheum.150379"
+                ]
+            }
+        },
+        "BIBREF22": {
+            "ref_id": "b22",
+            "title": "Clinical and pharmacogenetic influences on response to hydroxychloroquine in discoid lupus erythematosus: a retrospective cohort study",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Wahie",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Daly",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Cordell",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Goodfield",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Jones",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Lovell",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "J Investig Dermatol",
+            "volume": "131",
+            "issn": "10",
+            "pages": "1981--1987",
+            "other_ids": {
+                "DOI": [
+                    "10.1038/jid.2011.167"
+                ]
+            }
+        },
+        "BIBREF23": {
+            "ref_id": "b23",
+            "title": "Study on relationship of CYP3A4, CYP2C8 and CYP3A5 gene polymorphism with ADR/blood concentration of hydroxychloroquine in patients with autoimmune disease",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Beibei",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Menglu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Chunlan",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Shuai",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Zongwen",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Quan",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "China Pharmac",
+            "volume": "30",
+            "issn": "9",
+            "pages": "1251--1256",
+            "other_ids": {
+                "DOI": [
+                    "10.6039/j.issn.1001-0408.2019.09.20"
+                ]
+            }
+        },
+        "BIBREF24": {
+            "ref_id": "b24",
+            "title": "CYP3A4*1G genetic polymorphism influences CYP3A activity and response to fentanyl in Chinese gynecologic patients",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [
+                        "Z"
+                    ],
+                    "last": "Chang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Kan",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Lu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "Eur J Clin Pharmacol",
+            "volume": "66",
+            "issn": "1",
+            "pages": "61--67",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/s00228-009-0726-4"
+                ]
+            }
+        },
+        "BIBREF25": {
+            "ref_id": "b25",
+            "title": "Increased incidence of gastrointestinal side effects in patients taking hydroxychloroquine: a brand-related issue?",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Srinivasa",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Tosounidou",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Gordon",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "J Rheumatol",
+            "volume": "44",
+            "issn": "3",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.3899/jrheum.161063"
+                ]
+            }
+        },
+        "BIBREF26": {
+            "ref_id": "b26",
+            "title": "The Royal College of Ophthalmologists recommendations on screening for hydroxychloroquine and chloroquine users in the United Kingdom: executive summary. Eye (London)",
+            "authors": [
+                {
+                    "first": "I",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Yusuf",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Foot",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Galloway",
+                    "suffix": ""
+                },
+                {
+                    "first": "Ardern-Jones",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Watson",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Yelf",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "",
+            "volume": "32",
+            "issn": "",
+            "pages": "1168--73",
+            "other_ids": {
+                "DOI": [
+                    "10.1038/s41433-018-0136-x"
+                ]
+            }
+        },
+        "BIBREF27": {
+            "ref_id": "b27",
+            "title": "Hydroxychloroquine retinopathy-implications of research advances for rheumatology care",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Jorge",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Ung",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Young",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Melles",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Choi",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Nat Rev Rheumatol",
+            "volume": "14",
+            "issn": "12",
+            "pages": "693--703",
+            "other_ids": {
+                "DOI": [
+                    "10.1038/s41584-018-0111-8"
+                ]
+            }
+        },
+        "BIBREF28": {
+            "ref_id": "b28",
+            "title": "Pharmacokinetics of hydroxychloroquine and chloroquine during treatment of rheumatic diseases",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Furst",
+                    "suffix": ""
+                }
+            ],
+            "year": 1996,
+            "venue": "Lupus",
+            "volume": "5",
+            "issn": "",
+            "pages": "11--16",
+            "other_ids": {}
+        },
+        "BIBREF29": {
+            "ref_id": "b29",
+            "title": "Hydroxychloroquine-induced toxic hepatitis in a patient with systemic lupus erythematosus: a case report",
+            "authors": [
+                {
+                    "first": "Abdel",
+                    "middle": [],
+                    "last": "Galil",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Lupus",
+            "volume": "24",
+            "issn": "6",
+            "pages": "638--678",
+            "other_ids": {
+                "DOI": [
+                    "10.1177/0961203314561667"
+                ]
+            }
+        },
+        "BIBREF30": {
+            "ref_id": "b30",
+            "title": "Severe acute hepatitis related to hydroxychloroquine in a woman with mixed connective tissue disease",
+            "authors": [
+                {
+                    "first": "Giner",
+                    "middle": [],
+                    "last": "Galva\u00f1",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Oltra",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Rueda",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Esteban",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Red\u00f3n",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2007,
+            "venue": "Clin Rheumatol",
+            "volume": "26",
+            "issn": "6",
+            "pages": "971--973",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/s10067-006-0218-1"
+                ]
+            }
+        },
+        "BIBREF31": {
+            "ref_id": "b31",
+            "title": "Publisher's Note",
+            "authors": [],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF32": {
+            "ref_id": "b32",
+            "title": "Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations",
+            "authors": [],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        }
+    },
+    "ref_entries": {
+        "FIGREF0": {
+            "text": "Correlation between the daily dose groups and concentrations of HCQ and its metabolites. a Concentration of hydroxychloroquine (HCQ); b concentration of desethyl hydroxychloroquine (DHCQ); c concentration of desethyl chloroquine (DCQ); d concentration of bisdesethyl chloroquine (BDCQ) Gao et al. BMC Medical Genomics (2022) 15:23",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF1": {
+            "text": "Time-course of blood concentrations of HCQ and its metabolites in SLE and RA patients receiving 100, 200, 300 or 400 mg HCQ daily. a HCQ; b DHCQ; c DCQ; and d BDCQ (n = 6, n = 74, n = 46 and n = 20 for 100, 200, 300 and 400 mg dose groups, respectively.)",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF2": {
+            "text": "Abbreviations HCQ: Hydroxychloroquine; SLE: Systemic lupus erythematosus; RA: Rheumatoid arthritis; CYP 450: Cytochrome P450; ADRs: Adverse drug reactions; SNPs: Single nucleotide polymorphisms; GCs: Glucocorticoids; DMARDs: Diseasemodifying anti-rheumatic drugs; SLEDAI: SLE disease activity index; DHCQ: Desethyl hydroxychloroquine; DCQ: Desethyl chloroquine; LC-MS/MS: Liquid chromatography-tandem mass spectrometry; BDCQ: Bisdesethyl chloroquine; CQ: Chloroquine; HPLC: High-performance liquid chromatography; HWE: Hardy-Weinberg equilibrium; EULAR: European League Against Rheumatism.",
+            "latex": null,
+            "type": "figure"
+        },
+        "TABREF0": {
+            "text": "Characteristics of the study participants SLEDAI, Systemic Lupus Erythematosus Disease Activity Index; ADRs, Adverse drug reactions; Disease activity score 28, DAS28; [HCQ], HCQ concentration; [DHCQ], Desethyl hydroxychloroquine concentration; [DCQ], Desethyl chloroquine concentration; [BDCQ], Bisdesethyl chloroquine concentration Characteristic No. of patients, N = 146",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF1": {
+            "text": "HWE test of genotypes in 146 patients * P < 0.05, indicates no genetic mutation and no statistical analysis is needed",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF2": {
+            "text": "Frequencies of CYP 2C8, 3A5 and 3A4 polymorphisms",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF3": {
+            "text": "",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF4": {
+            "text": "Results of average blood concentrations of HCQ and its metabolites in SLE and RA patients with different CYP3A4 genotypesNote: vs. CT genotype, *P < 0.05 #: Adjusted for duration of use",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": [
+        {
+            "text": "Our work was supported by the Department of Rheumatism and Immunity, the First Affiliated Hospital of Anhui Medical University (Shengqian Xu). The authors would like to thank the investigators, research staff, health care providers, patients, and caregivers who contributed to this study.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Acknowledgements"
+        },
+        {
+            "text": "Authors' contributions BG, JW, QX designed the study, participated in data collection, conducted data analysis, and drafted the manuscript. ZS, TT, and MP participated in data collection and contributed to the analysis. XC and CY performed data analysis. All authors contributed substantially to the work, revised the manuscript critically, approved the submitted version, and agree to be accountable for all aspects of the work.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "annex"
+        },
+        {
+            "text": "This work was supported by The Key Research and Development Projects of Anhui Province (1804h08020228), and Special Clinical Research Projects of Wu Jieping Medical Foundation (320.6750.2020-03-6).",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Funding"
+        },
+        {
+            "text": "The datasets used and analysed in this study are available from the corresponding author on reasonable request.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Availability of data and materials"
+        },
+        {
+            "text": "The study complies with the Research and Ethics Committee of the First Affiliated Hospital of Anhui Medical University has approved the research protocol (reference: PJ2020-16-25) and all methods were performed in accordance with the relevant guidelines and regulations of The Declaration of Helsinki (DoH). Informed written consent has been obtained from all participants in the study.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Declarations Ethics approval and consent to participate"
+        },
+        {
+            "text": "Not applicable.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Consent for publication"
+        },
+        {
+            "text": "The authors have no conflicts of interest to declare with regard to this work.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Competing interests"
+        }
+    ]
+}

@@ -1,0 +1,1 @@
+[inputs | {"paper_id": .paper_id, title: .metadata.title} + ((.body_text[]? // {}) | {"text": .text, "section": .section} ) ]

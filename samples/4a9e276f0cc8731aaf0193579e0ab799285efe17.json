@@ -1,0 +1,1183 @@
+{
+    "paper_id": "4a9e276f0cc8731aaf0193579e0ab799285efe17",
+    "metadata": {
+        "title": "The effect of topical nitroglycerin on symmetrical peripheral gangrene in a pediatric patient",
+        "authors": [
+            {
+                "first": "Abdulla",
+                "middle": [],
+                "last": "Alfraij",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "Pediatric Intensive Care Unit",
+                    "institution": "Farwaniya Hospital",
+                    "location": {
+                        "settlement": "Farwaniya",
+                        "country": "Kuwait"
+                    }
+                },
+                "email": "alfraij.abdulla@gmail.com"
+            },
+            {
+                "first": "|",
+                "middle": [
+                    "Mohammad"
+                ],
+                "last": "Elseadawy",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "Pediatric Intensive Care Unit",
+                    "institution": "Farwaniya Hospital",
+                    "location": {
+                        "settlement": "Farwaniya",
+                        "country": "Kuwait"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "|",
+                "middle": [
+                    "Mohammad"
+                ],
+                "last": "Alghounaim",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Amiri Hospital",
+                    "location": {
+                        "settlement": "Kuwait City"
+                    }
+                },
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "This is an open access article under the terms of the Creative Commons Attribution-NonCommercial-NoDerivs License, which permits use and distribution in any medium, provided the original work is properly cited, the use is non-commercial and no modifications or adaptations are made.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        },
+        {
+            "text": "Symmetrical peripheral gangrene is a rare condition associated with significant morbidity and mortality. The use of topical nitroglycerin may have a role in improving patient outcomes and opens a new area for future research regarding the use of topical nitroglycerin in SPG.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "Symmetrical peripheral gangrene (SPG) is a rare clinical syndrome first described by Hutchinson in 1891. 1 It is a subtype of purpura fulminans that can be defined as symmetrical distal ischemic damage in two or more extremities without evidence of vasculitis or occlusion of major vessels. [1] [2] [3] [4] The ischemic changes usually occur in fingers or toes but can also involve lips, ear lobules, nose, and external genitalia. 2, 3 Unfortunately, the exact pathophysiology of SPG is not well understood. However, some theories might correlate it to the Schwartzman reaction, bacterial endotoxin release, and platelet plugging causing a blood flow blockage at the microcirculation level. 1 This phenomenon is usually triggered by disseminated intravascular coagulation (DIC). 1 Among patients with SPG, limb amputation and mortality occur in up to 50% and 40% of patients, respectively. 5, 6 The causes of SPG can be classified into infectious and noninfectious. 1 The noninfectious causes may be due to cardiovascular diseases, connective tissue disorders, malignancy, the use of vasoactive drugs, or hematological diseases. 1, 7 Neisseria meningitidis is the most commonly recognized infection associated with SPG and purpura fulminans in children, whereas Streptococcus pneumoniae is the most common cause in adults. 8 To date, there is still no definite treatment for SPG. The mainstay part of therapy focuses on treating the underlying cause or removing the aggravating factor. 9 Different types of vasodilating agents had been described in the management of digital ischemia or SPG without conclusive results. 5 Here, we present a child with SPG secondary to refractory culturesnegative septic shock treated by topical nitroglycerin 0.2%.",
+            "cite_spans": [
+                {
+                    "start": 105,
+                    "end": 106,
+                    "text": "1",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 291,
+                    "end": 294,
+                    "text": "[1]",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 295,
+                    "end": 298,
+                    "text": "[2]",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 299,
+                    "end": 302,
+                    "text": "[3]",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 303,
+                    "end": 306,
+                    "text": "[4]",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 431,
+                    "end": 433,
+                    "text": "2,",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 434,
+                    "end": 435,
+                    "text": "3",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 691,
+                    "end": 692,
+                    "text": "1",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 779,
+                    "end": 780,
+                    "text": "1",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 890,
+                    "end": 892,
+                    "text": "5,",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 893,
+                    "end": 894,
+                    "text": "6",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 966,
+                    "end": 967,
+                    "text": "1",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 1129,
+                    "end": 1131,
+                    "text": "1,",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 1132,
+                    "end": 1133,
+                    "text": "7",
+                    "ref_id": "BIBREF6"
+                },
+                {
+                    "start": 1323,
+                    "end": 1324,
+                    "text": "8",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 1619,
+                    "end": 1620,
+                    "text": "5",
+                    "ref_id": "BIBREF4"
+                }
+            ],
+            "ref_spans": [],
+            "section": "| BACKGROUND"
+        },
+        {
+            "text": "An 18-month-old boy, previously healthy, had otitis media, for which he was given amoxicillin. However, over a few days, he became progressively lethargic and unwell for which he was brought to the emergency department. His symptoms included fever, vomiting, diarrhea, decreased activity, and decreased feeding for 4 days. The condition continued to worsen, and he developed signs of distributive shock 10 hours after the ward admission. Aggressive fluid resuscitation (reaching 60 mL/kg) and broad-spectrum antibiotics were initiated immediately. He was then transferred to the pediatric intensive care unit (PICU) with a picture of cold hypotensive shock with blood pressure been monitored continuously via the femoral arterial line. Epinephrine infusion started peripherally within the first hour of PICU admission, then switched centrally after central venous catheter insertion. Advanced hemodynamic monitoring using an Ultrasonic Cardiac Output Monitor (USCOM) confirmed a high systemic vascular resistance index. The patient was intubated and mechanically ventilated as his level of consciousness started to decrease due to an ongoing shock state and low brain perfusion condition. Epinephrine infusion was titrated up to a maximum of 0.25 mcg/kg/min, and norepinephrine infusion was also titrated to a maximum of 0.25 mcg/kg/min. Both failed to control the hypotension, as evident by arterial pressure monitoring and poor perfusion state. Most of the other differential diagnoses were excluded at that time, including macrophage activating syndrome and sepsis-induced cytokine storm (his ferritin level was 261 ng/ mL). Considering adrenal insufficiency as a sequelae of septic shock state, hydrocortisone (dose of 1 mg/kg/dose every 6 hours) was started with a minimal effect on blood pressure or perfusion. Then, vasopressin infusion was initiated with a rapid withdrawal of norepinephrine infusion. The hemodynamic status began to improve once we reached the vasopressin infusion rate of 0.7 mU/kg/min. All the superficial and deep bacterial cultures and viral testing including blood, urine, cerebrospinal fluids, nasopharyngeal swabs for SARS-CoV-2 and other respiratory viruses, and Bronchoalveolar lavage cultures were negative. Serum SARS-CoV-2 IgG was positive with a negative IgM result. In view of patient presentation and clinical condition, septic shock could not be ruled out and the suspicion of culture-negative septic shock was considered.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "| CASE PRESENTATION"
+        },
+        {
+            "text": "His septic shock was complicated with profound DIC and acute respiratory distress syndrome (ARDS). His creatinine, urea (Table 1) , and echocardiogram were all normal. Six hours post-PICU admission, skin pallor was noticed over the distal aspect of the patient's fingers and toes on all extremities, as well as petechial rash over the palms and soles (Figure 1 ). These changes were noticed a while before starting vasopressin infusion. Radial and posterior tibial pulses in all limbs were detected using a Doppler device which raises the diagnosis of SPG adding more complexity to the case. Rapid weaning of vasoactive infusions in a stabilizing phase of shock carries a high risk of sudden deterioration with possible mortality. On the other hand, continuing with these high levels of infusions might worsen the SPG condition. As a response, vasoactive infusions were titrated to the lowest possible rate while maintaining hemodynamics. Unfortunately, specific investigations for thrombosis are not available in our center and were not done. Due to the urgency of the situation, heparin infusion was started aiming to control the potential development of the microthrombi. Vasoactive drugs were gradually tapered down until all were discontinued on day 4.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 120,
+                    "end": 129,
+                    "text": "(Table 1)",
+                    "ref_id": null
+                },
+                {
+                    "start": 351,
+                    "end": 360,
+                    "text": "(Figure 1",
+                    "ref_id": null
+                }
+            ],
+            "section": "| CASE PRESENTATION"
+        },
+        {
+            "text": "Since the third day of his PICU stay, he was in low setting of the mechanical ventilator as his ARDS condition improved. A Magnetic resonance imaging of the brain was performed on day 3, and revealed bifrontal meningeal enhancement with associated areas of tiny hemorrhagic foci, suggestive of meningitis, and bilateral cerebellitis. Although all bacterial cultures failed to grow an organism, culture-negative septic shock remained the main working diagnosis due to the clinical presentation and the previous use of antibiotic prior to hospital admission. Shock-related hypoperfusion and DIC (suggested by low platelet count, elevated D-dimer level, and prolongation of clotting times) were thought to be the cause of his symmetrical gangrene of both hands and feet. Table 1 summarizes the patient's laboratory results during his PICU stay.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 768,
+                    "end": 775,
+                    "text": "Table 1",
+                    "ref_id": null
+                }
+            ],
+            "section": "| CASE PRESENTATION"
+        },
+        {
+            "text": "Topical nitroglycerin 0.2% was started within 24 hours of noticing SPG with a dose of 4 mm/kg applied as a thin ribbon for each limb every 8 hours. It was applied 5-10 mm proximal to the demarcation line to ensure adequate absorption by surrounding healthy tissue. Blood pressure and methemoglobin levels were closely monitored. As a result, an improvement in skin color was noticed in all limbs within 24 hours of the first application (Figures 2 and 3 ). There was a continuous improvement in the discoloration in both hands and feet ( Figure 4) . However, unfortunately, the patient passed away on day 10 of the illness due to complete airway obstruction secondary to massive blood clots, confirmed by an urgent diagnostic and therapeutic bronchoscopy which failed to open the airway.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 437,
+                    "end": 453,
+                    "text": "(Figures 2 and 3",
+                    "ref_id": null
+                },
+                {
+                    "start": 538,
+                    "end": 547,
+                    "text": "Figure 4)",
+                    "ref_id": null
+                }
+            ],
+            "section": "| CASE PRESENTATION"
+        },
+        {
+            "text": "Symmetrical peripheral gangrene can lead to significant morbidity and is associated with an increased risk of mortality when observed in patients with shock. 5, 6 Early recognition and intervention are crucial components in the management of SPG. Here, we demonstrate a temporal improvement in tissue perfusion and skin discoloration using topical nitroglycerin in a case of SPG secondary to DIC and septic shock.",
+            "cite_spans": [
+                {
+                    "start": 158,
+                    "end": 160,
+                    "text": "5,",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 161,
+                    "end": 162,
+                    "text": "6",
+                    "ref_id": "BIBREF5"
+                }
+            ],
+            "ref_spans": [],
+            "section": "| DISCUSSION"
+        },
+        {
+            "text": "Due to the rarity of the condition, there is no definitive treatment for SPG which raises the immediate need for a multi-disciplinary team approach once SPG is suspected. 1 Therapeutic approaches aim to manage the underlying offending factor either by treating the underlying cause, control of contributing factors, or prevention of secondary bacterial infections. No drug has been shown to improve mortality in DIC definitively. 10, 11 A meta-analysis suggested that heparin use in patients with septic shock and infection-related DIC may be associated with a mortality reduction rate of 20%. 12 Former SPG stages include the initial hypoperfusion state followed by tissue ischemia which eventually led to gangrene formation. For the first stage, the restoration of the peripheral circulatory system is the most important intervention.",
+            "cite_spans": [
+                {
+                    "start": 171,
+                    "end": 172,
+                    "text": "1",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 430,
+                    "end": 433,
+                    "text": "10,",
+                    "ref_id": "BIBREF9"
+                },
+                {
+                    "start": 434,
+                    "end": 436,
+                    "text": "11",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 594,
+                    "end": 596,
+                    "text": "12",
+                    "ref_id": "BIBREF11"
+                }
+            ],
+            "ref_spans": [],
+            "section": "| DISCUSSION"
+        },
+        {
+            "text": "The exact pathogenesis of how SPG occurs is not well understood. The possible hypothesis includes a low blood flow state as a result of or in association with DIC. 13 Molos et al 14 noted DIC as an essential underlying factor in 85% of patients who develop SPG. Rarely, SPG can occur in the absence of DIC. 8 SPG might begin as petechial lesions due to capillary dilatation and red-cell extravasation with signs of fibrin deposition and microvascular necrosis. These petechial lesions merge over time to form hemorrhagic bullae in regions of ischemic necrosis. 8, 10 Critically ill patients with SPG have increased mortality compared to those without SPG, and a high risk of limb amputations in those fortunate enough to survive. 10 Some reports described the use of vasodilator agents to improve tissue perfusion in areas affected by SPG. These agents include intravenous (IV) prostaglandins, phosphodiesterase inhibitors, endothelin receptor antagonist, IV nitroprusside, IV trimethaphan, and topical nitroglycerin. 6, [15] [16] [17] [18] They were all reported with the various extent of effectiveness for digital ulceration or peripheral gangrene. Amputation, as a last resort, may be inevitable once the line of demarcation of the gangrene is developed. 19 Among available treatment options, topical nitroglycerin appears to be a relatively effective therapy in managing peripheral limb ischemia. Although there was limited evidence supporting any treatment for SPG, some neonatal case reports were advocating the use of topical nitroglycerin with a promising outcome without reporting any side effect. 20, 21 Nevertheless, it has been used in the prevention of skin flap necrosis and the management of diabetic ulcers. 22,23 Topical nitroglycerin selectively inhibits phosphodiesterase-5 (PDE5) and prevents cyclic guanosine monophosphate (cGMP) from breaking down. Working on these pathways leads to smooth muscle relaxation in blood vessels. The vasodilating effect of topical nitroglycerin promotes microcirculation of blood flow in the digital limbs. Topical nitroglycerin is well absorbed through intact skin, delivering the highest dose to the area directly beneath. However, the amounts of nitroglycerin reaching the circulation vary in relation to the surface area size and the amount of ointment applied. 24 The onset of action is within 1 hour, and the hemodynamic effects last up to 6 hours. Frequent application over a large skin surface area can potentiate systemic effects of topical nitroglycerin and results in hypotension.",
+            "cite_spans": [
+                {
+                    "start": 164,
+                    "end": 166,
+                    "text": "13",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 561,
+                    "end": 563,
+                    "text": "8,",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 564,
+                    "end": 566,
+                    "text": "10",
+                    "ref_id": "BIBREF9"
+                },
+                {
+                    "start": 730,
+                    "end": 732,
+                    "text": "10",
+                    "ref_id": "BIBREF9"
+                },
+                {
+                    "start": 1018,
+                    "end": 1020,
+                    "text": "6,",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 1021,
+                    "end": 1025,
+                    "text": "[15]",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 1026,
+                    "end": 1030,
+                    "text": "[16]",
+                    "ref_id": "BIBREF15"
+                },
+                {
+                    "start": 1031,
+                    "end": 1035,
+                    "text": "[17]",
+                    "ref_id": "BIBREF16"
+                },
+                {
+                    "start": 1036,
+                    "end": 1040,
+                    "text": "[18]",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 1259,
+                    "end": 1261,
+                    "text": "19",
+                    "ref_id": "BIBREF18"
+                },
+                {
+                    "start": 1608,
+                    "end": 1611,
+                    "text": "20,",
+                    "ref_id": "BIBREF19"
+                },
+                {
+                    "start": 1612,
+                    "end": 1614,
+                    "text": "21",
+                    "ref_id": "BIBREF20"
+                },
+                {
+                    "start": 2320,
+                    "end": 2322,
+                    "text": "24",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "| DISCUSSION"
+        },
+        {
+            "text": "Indications regarding the use of topical nitroglycerin varied in children. In recent years, evidence has been published on nitroglycerin's efficacy to treat ischemic complications associated with vascular cannulation or drug extravasation. 20 The use of topical nitroglycerin in children is limited due to the lack of consensus on its safety and the proper dosage in pediatrics. The side effects of nitroglycerin may include hypotension and methemoglobinemia. In our case, we closely monitored the patient's blood pressure and methemoglobin level, while using topical nitroglycerin 0.2%. We did not observe any adverse effects. Although the available data on topical nitroglycerin is limited to the case series description, the outcomes are promising. ",
+            "cite_spans": [
+                {
+                    "start": 240,
+                    "end": 242,
+                    "text": "20",
+                    "ref_id": "BIBREF19"
+                }
+            ],
+            "ref_spans": [],
+            "section": "| DISCUSSION"
+        },
+        {
+            "text": "We reported a case that had marked improvement in SPG in response to topical nitroglycerin. Further studies are required to test the real effectiveness of topical nitroglycerin in cases of early peripheral ischemia.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "| CONCLUSION"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "Symmetrical peripheral gangrene",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Ghosh",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Bandyopadhyay",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "Indian J Dermatol Venereol Leprol",
+            "volume": "77",
+            "issn": "2",
+            "pages": "244--248",
+            "other_ids": {
+                "DOI": [
+                    "10.4103/0378-6323.77481"
+                ]
+            }
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "Symmetrical peripheral gangrene",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Sharma",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Kabra",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Gupta",
+                    "suffix": ""
+                }
+            ],
+            "year": 2004,
+            "venue": "Trop Doct",
+            "volume": "34",
+            "issn": "1",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1177/004947550403400102"
+                ]
+            }
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "Images in clinical medicine. Symmetric peripheral gangrene",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Berrey",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Van Burik",
+                    "suffix": ""
+                }
+            ],
+            "year": 2001,
+            "venue": "N Engl J Med",
+            "volume": "344",
+            "issn": "21",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1056/NEJM200105243442105"
+                ]
+            }
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "Bad to worse",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Helviz",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Hersch",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Shmuelevitz",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Atrash",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Einav",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "Am J Med",
+            "volume": "124",
+            "issn": "3",
+            "pages": "215--217",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.amjmed.2010.11.007"
+                ]
+            }
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "Symmetrical peripheral gangrene in sepsis after treatment with inotropes",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Jiang",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Tseng",
+                    "suffix": ""
+                },
+                {
+                    "first": "Chang",
+                    "middle": [],
+                    "last": "Hr",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "",
+            "volume": "29",
+            "issn": "",
+            "pages": "121--124",
+            "other_ids": {
+                "DOI": [
+                    "10.4103/tcmj.tcmj_25_17"
+                ]
+            }
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "Symmetrical peripheral gangrene: a rare but dreadful complication of sepsis",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Parmar",
+                    "suffix": ""
+                }
+            ],
+            "year": 2002,
+            "venue": "CMAJ",
+            "volume": "167",
+            "issn": "9",
+            "pages": "1037--1038",
+            "other_ids": {}
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "Symmetrical peripheral gangrene in two children at the university teaching hospital of Butare (CHUB): a report of two cases",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Urimubabo",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Byiringiro",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Ssebuufu",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Fawce",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Rwanda Med J",
+            "volume": "72",
+            "issn": "3",
+            "pages": "25--27",
+            "other_ids": {}
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "Ischemic limb gangrene with pulses",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Warkentin",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "N Engl J Med",
+            "volume": "373",
+            "issn": "7",
+            "pages": "642--655",
+            "other_ids": {
+                "DOI": [
+                    "10.1056/NEJMra1316259"
+                ]
+            }
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "Symmetrical peripheral gangrene caused by septic shock",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Shimbo",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Yokota",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Miyamoto",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Okuhara",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Ochi",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Case Reports Plast Surg Hand Surg",
+            "volume": "2",
+            "issn": "3-4",
+            "pages": "53--56",
+            "other_ids": {
+                "DOI": [
+                    "10.3109/23320885.2015.1041529"
+                ]
+            }
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "Management of symmetrical peripheral gangrene",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "I"
+                    ],
+                    "last": "Foead",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Mathialagan",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Varadarajan",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Larvin",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Indian J Crit Care Med",
+            "volume": "22",
+            "issn": "12",
+            "pages": "870--874",
+            "other_ids": {
+                "DOI": [
+                    "10.4103/ijccm.IJCCM_379_18"
+                ]
+            }
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "Diagnosis and treatment of disseminated intravascular coagulation (DIC) according to four DIC guidelines",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Wada",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Matsumoto",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Yamashita",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "J Intensive Care",
+            "volume": "2",
+            "issn": "1",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1186/2052-0492-2-15"
+                ]
+            }
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "The efficacy and safety of heparin in patients with sepsis: a systematic review and metaanalysis",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Zarychanski",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Abou-Setta",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Kanji",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Crit Care Med",
+            "volume": "43",
+            "issn": "3",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1097/CCM.0000000000000763"
+                ]
+            }
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "Symmetrical peripheral gangrene: a prospective study of 14 consecutive cases in a tertiary-care hospital in Eastern India",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Ghosh",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Bandyopadhyay",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Ghosh",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "J Eur Acad Dermatol Venereol",
+            "volume": "24",
+            "issn": "2",
+            "pages": "214--218",
+            "other_ids": {
+                "DOI": [
+                    "10.1111/j.1468-3083.2009.03329.x"
+                ]
+            }
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "Symmetrical peripheral gangrene and disseminated intravascular coagulation",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Molos",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Hall",
+                    "suffix": ""
+                }
+            ],
+            "year": 1985,
+            "venue": "Arch Dermatol",
+            "volume": "121",
+            "issn": "8",
+            "pages": "1057--1061",
+            "other_ids": {}
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "Symmetrical peripheral gangrene of bilateral feet and unilateral hand after administration of vasopressors during septic shock",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Ruffin",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "V"
+                    ],
+                    "last": "Vasa",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Breakstone",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Axman",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "BMJ Case Rep",
+            "volume": "2018",
+            "issn": "",
+            "pages": "1--5",
+            "other_ids": {
+                "DOI": [
+                    "10.1136/bcr-2017-223602"
+                ]
+            }
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "Successful resolution of symmetrical peripheral gangrene after severe acute pancreatitis: a case report",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Liao",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Huang",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Lin",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "J Med Case Rep",
+            "volume": "9",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1186/s13256-015-0688-3"
+                ]
+            }
+        },
+        "BIBREF16": {
+            "ref_id": "b16",
+            "title": "Low-dose combination therapy of severe digital ulcers in diffuse progressive systemic sclerosis with the endothelin-1 receptor antagonist bosentan and the phosphodiesterase V inhibitor sildenafil",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Ambach",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Seo",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Bonnekoh",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Gollnick",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "J Dtsch Dermatol Ges",
+            "volume": "7",
+            "issn": "10",
+            "pages": "888--891",
+            "other_ids": {
+                "DOI": [
+                    "10.1111/j.1610-0387.2009.07057.x"
+                ]
+            }
+        },
+        "BIBREF17": {
+            "ref_id": "b17",
+            "title": "Nitroglycerine ointment for dopamine induced peripheral digital ischemia",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Gibbs",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Oh",
+                    "suffix": ""
+                }
+            ],
+            "year": 1983,
+            "venue": "Lancet",
+            "volume": "2",
+            "issn": "8344",
+            "pages": "90278--90285",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/s0140-6736(83)90278-7"
+                ]
+            }
+        },
+        "BIBREF18": {
+            "ref_id": "b18",
+            "title": "Four limb amputations due to peripheral gangrene from inotrope use -case report and review of the literature",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Ang",
+                    "suffix": ""
+                },
+                {
+                    "first": "O",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Koo",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Howe",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Int J Surg Case Rep",
+            "volume": "14",
+            "issn": "",
+            "pages": "63--65",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.ijscr.2015.07.012"
+                ]
+            }
+        },
+        "BIBREF19": {
+            "ref_id": "b19",
+            "title": "Topical nitroglycerine for neonatal arterial associated peripheral ischemia following cannulation: a case report and comprehensive literature review",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Mosalli",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Elbaz",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Paes",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "Case Rep Pediatr",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1155/2013/608516"
+                ]
+            }
+        },
+        "BIBREF20": {
+            "ref_id": "b20",
+            "title": "The use of topical nitroglycerin ointment to treat peripheral tissue ischemia secondary to arterial line complications in neonates",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Baserga",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Puri",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Sola",
+                    "suffix": ""
+                }
+            ],
+            "year": 2002,
+            "venue": "J Perinatol",
+            "volume": "22",
+            "issn": "5",
+            "pages": "416--419",
+            "other_ids": {
+                "DOI": [
+                    "10.1038/sj.jp.7210713"
+                ]
+            }
+        }
+    },
+    "ref_entries": {
+        "FIGREF0": {
+            "text": "I G U R E 1 The palms of right A, and left B, hands and right toes C, of the patient,",
+            "latex": null,
+            "type": "figure"
+        }
+    },
+    "back_matter": [
+        {
+            "text": "We thank Mohammad Almutawaa, Clin. Pharm., for his contribution to the child's management and the active participation in preparing the treatment with close monitoring and follow-up.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "ACKNOWLEDGMENT"
+        },
+        {
+            "text": "None declared.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "CONFLICT OF INTEREST"
+        },
+        {
+            "text": "AA: contributed to conceptualization, methodology, data curation, writing-original draft, and supervision. ME: contributed to conceptualization, methodology, data curation, writing-original draft. MA: contributed to conceptualization, methodology, writing-review and editing. All authors approved the final manuscript as submitted and agree to be accountable for all aspects of the work.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "AUTHOR CONTRIBUTIONS"
+        },
+        {
+            "text": "We confirm that written consent for the publication with obtaining and publishing photographs of the affected body sites during hospitalization of the patient was obtained from the child's parents.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "ETHICAL APPROVAL"
+        },
+        {
+            "text": "The authors confirm that the data supporting the findings of this study are available within the article.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "DATA AVAILABILITY STATEMENT"
+        },
+        {
+            "text": "https://orcid.org/0000-0003-0179-1716 ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abdulla Alfraij"
+        }
+    ]
+}

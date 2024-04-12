@@ -1,0 +1,2847 @@
+{
+    "paper_id": "4a9e9093e923e4204ef88f01392fefa5c3790944",
+    "metadata": {
+        "title": "COVID-19 classification using deep feature concatenation technique",
+        "authors": [
+            {
+                "first": "Waleed",
+                "middle": [],
+                "last": "Saad",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Wafaa",
+                "middle": [
+                    "A"
+                ],
+                "last": "Shalaby",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Mona",
+                "middle": [],
+                "last": "Shokair",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "\u00b7",
+                "middle": [],
+                "last": "Fathi",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Abd",
+                "middle": [],
+                "last": "El-Samie",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Moawad",
+                "middle": [],
+                "last": "Dessouky",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "\u00b7",
+                "middle": [
+                    "Essam"
+                ],
+                "last": "Abdellatef",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "Detecting COVID-19 from medical images is a challenging task that has excited scientists around the world. COVID-19 started in China in 2019, and it is still spreading even now. Chest X-ray and Computed Tomography (CT) scan are the most important imaging techniques for diagnosing COVID-19. All researchers are looking for effective solutions and fast treatment methods for this epidemic. To reduce the need for medical experts, fast and accurate automated detection techniques are introduced. Deep learning convolution neural network (DL-CNN) technologies are showing remarkable results for detecting cases of COVID-19. In this paper, deep feature concatenation (DFC) mechanism is utilized in two different ways. In the first one, DFC links deep features extracted from X-ray and CT scan using a simple proposed CNN. The other way depends on DFC to combine features extracted from either X-ray or CT scan using the proposed CNN architecture and two modern pre-trained CNNs: ResNet and GoogleNet. The DFC mechanism is applied to form a definitive classification descriptor. The proposed CNN architecture consists of three deep layers to overcome the problem of large time consumption. For each image type, the proposed CNN performance is studied using different optimization algorithms and different values for the maximum number of epochs, the learning rate (LR), and mini-batch (M-B) size. Experiments have demonstrated the superiority of the proposed approach compared to other modern and state-of-the-art methodologies in terms of accuracy, precision, recall and f_score.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "The novel COVID-19 disease has appeared in China in Wuhan city (Zhu et al. 2020) . Then, it has become a pandemic, and it has rapidly spread through the world. It has had destructive effects on public health, daily life, and global economy (Singhal 2020) . The symptoms of this disease include cough, sore throat, runny nose, fever, headache, and lung infection . Pneumonia is one of the main effects of COVID-19, which must be promptly diagnosed. Thus, rapid diagnostic testing of COVID-19 has become a major challenge. The laboratory-testing Real Time Polymerase Chain Reaction (RT-PCR) is the most famous current diagnostic tool. However, it is expensive (in some countries), and time-consuming (Xie et al. 2020a ). Nowadays, medical image processing has a vital and influential role in diagnosing and detecting the disease (Xie et al. 2020b; Narin et al. 2020) . Convolutional Neural Networks (CNNs) can be beneficial for accurate classification of this disease, and they can also help to overcome the shortage of specialists, especially in villages. In contrary to traditional learning paradigms, transfer learning seeks to solve the related problems by using the pre-gained knowledge (Jin et al. 2020; Najafabadi et al. 2015; Chen and Lin 2014; Singh et al. 2017) .",
+            "cite_spans": [
+                {
+                    "start": 63,
+                    "end": 80,
+                    "text": "(Zhu et al. 2020)",
+                    "ref_id": "BIBREF47"
+                },
+                {
+                    "start": 240,
+                    "end": 254,
+                    "text": "(Singhal 2020)",
+                    "ref_id": "BIBREF37"
+                },
+                {
+                    "start": 698,
+                    "end": 715,
+                    "text": "(Xie et al. 2020a",
+                    "ref_id": "BIBREF42"
+                },
+                {
+                    "start": 827,
+                    "end": 845,
+                    "text": "(Xie et al. 2020b;",
+                    "ref_id": "BIBREF43"
+                },
+                {
+                    "start": 846,
+                    "end": 864,
+                    "text": "Narin et al. 2020)",
+                    "ref_id": "BIBREF28"
+                },
+                {
+                    "start": 1190,
+                    "end": 1207,
+                    "text": "(Jin et al. 2020;",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 1208,
+                    "end": 1231,
+                    "text": "Najafabadi et al. 2015;",
+                    "ref_id": "BIBREF27"
+                },
+                {
+                    "start": 1232,
+                    "end": 1250,
+                    "text": "Chen and Lin 2014;",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 1251,
+                    "end": 1269,
+                    "text": "Singh et al. 2017)",
+                    "ref_id": "BIBREF38"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "Concatenation of deep features extracted from multiple CNNs produces a discriminant and appropriate descriptor for the classification process. Noreen et al. (2020) designed a feature concatenation algorithm for brain tumor classification. In this algorithm, two pre-trained models (Inception-v3 and DensNet201) have been used for deep feature extraction. DU. proposed a Selective Feature Connection Mechanism (SFCM), by which low-level and high-level features are linked together with a feature selector. Their mechanism can effectively demonstrate the effectiveness in multiple computer vision tasks including object detection, image classification, scene text detection, and image-to-image translation. Furthermore, Chenhui et al. Ma et al. (2019) presented a CNN-based fusion technique to integrate feature maps from various layers.",
+            "cite_spans": [
+                {
+                    "start": 143,
+                    "end": 163,
+                    "text": "Noreen et al. (2020)",
+                    "ref_id": "BIBREF30"
+                },
+                {
+                    "start": 733,
+                    "end": 749,
+                    "text": "Ma et al. (2019)",
+                    "ref_id": "BIBREF25"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "In this paper, we propose a DFC-based approach for automatic identification of COVID-19. This approach is applied to form a definitive classification descriptor. It is adopted in two different methods. The first method depends on the concatenation of deep features that are extracted separately from X-ray and CT images. Deep features are obtained using a proposed simple CNN that includes three deep layers, only. The second method aims to reach the optimal performance from either X-ray or CT scan by performing concatenation between the features extracted using three different CNNs, which are the proposed CNN architecture and two modern pre-trained CNNs (ResNet and GoogleNet). The main contributions of this paper can be summarized as follows:",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "-Providing a CNN-based framework for diagnosis and detection of COVID-19 disease. -Introducing a simple proposed CNN architecture to solve the time consumption problem. -Adjusting the CNN parameters such as optimization algorithm, maximum number of epochs, LR, and M-B size. -Performing a DFC mechanism to take the advantage of combining deep features extracted from different image types. -Executing extensive experiments to compare the performance of the proposed approach with related ones.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "The rest of the paper is organized as following. Section 2 describes the related work. Section 3 provides the proposed DFC mechanism. Section 4 shows the experimental results and discussions. Finally, the conclusion is summarized in Sect. 5.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "The CNN is a class of deep learning tools. There are CNN models trained on instance ImageNet and used for image classification (Krizhevsky et al. 2012) . The AlexNet consists of eight layers. It was proposed in 2012 (Jmour et al. 2018a) . Furthermore, in 2014, VGGNet was developed to have different numbers of layers (11, 16 and 19 layers) Sengupta et al. (2019) . In addition, LeNet was announced with a structure of two convolution layers, two max-pooling layers, a fully-connected layer and a classification layer (LeCun et al. 2015) . Furthermore, GoogleNet, developed by Christian in 2014, had 22 layers with the insertion of inception layers (Szegedy et al. 2015a) . Besides, ResNet, proposed by Kaiming in 2015, consisted of different layers (18, 50, 101, 152 , and 1202 layers) He et al. (2016) . Furthermore, SqueezeNet, presented in 2016, provided less parameters with faster performance than that of the AlexNet Iandola et al. (2016) . In 2017, DenseNet introduced dense connection between layers (Huang et al. 2017) . In 2018, MobileNetV2 was presented using the idea of inverted residual structures, and it performed well on mobile devices (Sandler et al. 2018 ). In addition, an efficient network was introduced in 2019 that includes 5.3 million parameters (Tan and Le 2019). Nowadays, CNNs accomplished a great success in the areas of medical image analysis such as brain tumor detection (Sajjad et al. 2019) , classification of skin diseases (Esteva et al. 2017) , diagnosis of pulmonary modules (Cheng et al. 2016) , diagnosis of breast cancer (Braman et al. 2019) and recognition of immune cells (Chen and ChefdHotel 2014) . Recently, additional medical applications appeared such as improving the storage and exchange of DICOM medical data on the cloud (Dorgham et al. 2018; Zheng et al. 2017 ), transformation of secret information by using virtue of quantum-watermarked images Qu et al. (2019) , Nuclei segmentation of brain tumors Guo et al. (2018) , and early detection of COVID-19 disease. Furthermore, a healthcare framework was developed through a medical image forgery detection system to ensure that images are related to the healthcare system or not (Ghoneim et al. 2018; Amato et al. 2018) .",
+            "cite_spans": [
+                {
+                    "start": 127,
+                    "end": 151,
+                    "text": "(Krizhevsky et al. 2012)",
+                    "ref_id": "BIBREF20"
+                },
+                {
+                    "start": 216,
+                    "end": 236,
+                    "text": "(Jmour et al. 2018a)",
+                    "ref_id": "BIBREF18"
+                },
+                {
+                    "start": 341,
+                    "end": 363,
+                    "text": "Sengupta et al. (2019)",
+                    "ref_id": "BIBREF35"
+                },
+                {
+                    "start": 518,
+                    "end": 537,
+                    "text": "(LeCun et al. 2015)",
+                    "ref_id": "BIBREF21"
+                },
+                {
+                    "start": 649,
+                    "end": 671,
+                    "text": "(Szegedy et al. 2015a)",
+                    "ref_id": null
+                },
+                {
+                    "start": 750,
+                    "end": 754,
+                    "text": "(18,",
+                    "ref_id": null
+                },
+                {
+                    "start": 755,
+                    "end": 758,
+                    "text": "50,",
+                    "ref_id": null
+                },
+                {
+                    "start": 759,
+                    "end": 763,
+                    "text": "101,",
+                    "ref_id": null
+                },
+                {
+                    "start": 764,
+                    "end": 767,
+                    "text": "152",
+                    "ref_id": null
+                },
+                {
+                    "start": 787,
+                    "end": 803,
+                    "text": "He et al. (2016)",
+                    "ref_id": "BIBREF13"
+                },
+                {
+                    "start": 924,
+                    "end": 945,
+                    "text": "Iandola et al. (2016)",
+                    "ref_id": "BIBREF16"
+                },
+                {
+                    "start": 1009,
+                    "end": 1028,
+                    "text": "(Huang et al. 2017)",
+                    "ref_id": "BIBREF15"
+                },
+                {
+                    "start": 1154,
+                    "end": 1174,
+                    "text": "(Sandler et al. 2018",
+                    "ref_id": "BIBREF34"
+                },
+                {
+                    "start": 1404,
+                    "end": 1424,
+                    "text": "(Sajjad et al. 2019)",
+                    "ref_id": "BIBREF33"
+                },
+                {
+                    "start": 1459,
+                    "end": 1479,
+                    "text": "(Esteva et al. 2017)",
+                    "ref_id": "BIBREF8"
+                },
+                {
+                    "start": 1513,
+                    "end": 1532,
+                    "text": "(Cheng et al. 2016)",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 1562,
+                    "end": 1582,
+                    "text": "(Braman et al. 2019)",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 1615,
+                    "end": 1641,
+                    "text": "(Chen and ChefdHotel 2014)",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 1773,
+                    "end": 1794,
+                    "text": "(Dorgham et al. 2018;",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 1795,
+                    "end": 1812,
+                    "text": "Zheng et al. 2017",
+                    "ref_id": "BIBREF45"
+                },
+                {
+                    "start": 1899,
+                    "end": 1915,
+                    "text": "Qu et al. (2019)",
+                    "ref_id": "BIBREF31"
+                },
+                {
+                    "start": 1954,
+                    "end": 1971,
+                    "text": "Guo et al. (2018)",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 2180,
+                    "end": 2201,
+                    "text": "(Ghoneim et al. 2018;",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 2202,
+                    "end": 2220,
+                    "text": "Amato et al. 2018)",
+                    "ref_id": "BIBREF0"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Related work"
+        },
+        {
+            "text": "A series of CNN-based approaches were designed for COVID-19 detection. Ying et al. and Song et al. (2020) used ResNet-50 for COVID-19 detection from CT images. Images were divided into 101 bacterial pneumonia, 86 normal cases and 88 COVID-19 patients. Their methodology achieved an accuracy of 86.0% for classification of bacterial or COVID-19 pneumonia. Besides, Farooq and Hafeez (2020) adopted ResNet-50 and applied various augmentation techniques to achieve an accuracy of 96.23%. Moreover, Xu et al. (2020) used V-Net for infected region segmentation. Also, ResNet-18 was used for diagnosis of COVID-19 cases with an accuracy of 86.7%. Hall et al. (2020) utilized the VGG16 model with 10-folds for training with the entire dataset to reach an accuracy of 96.1% and an Area Under the Curve (AUC) of 99.7%. Nguyen et al. (2018) used ResNet-152, Inception-v3 and Inception-ResNet-v2 for extracting deep features from input images. These features are combined to represent all details of the input PAP-Smear and 2D-Hela datasets. Their mechanism provided an accuracy of 92.6%. Liang et al. (2019) studied the fusion of both CT and MR images for training of their Multi-layer Concatenation Fusion Network (MCFNet). They achieved good classification results. Rahimzadeh and Attar (2020) proposed a concatenationbased approach to link the features extracted using ResNet-50V2 and Xception CNNs. Their approach was applied on an X-ray dataset that was divided into three categories: pneumonia, normal and COVID-19 images. An accuracy of 91.4% was achieved.",
+            "cite_spans": [
+                {
+                    "start": 87,
+                    "end": 105,
+                    "text": "Song et al. (2020)",
+                    "ref_id": "BIBREF39"
+                },
+                {
+                    "start": 495,
+                    "end": 511,
+                    "text": "Xu et al. (2020)",
+                    "ref_id": "BIBREF44"
+                },
+                {
+                    "start": 641,
+                    "end": 659,
+                    "text": "Hall et al. (2020)",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 810,
+                    "end": 830,
+                    "text": "Nguyen et al. (2018)",
+                    "ref_id": "BIBREF29"
+                },
+                {
+                    "start": 1078,
+                    "end": 1097,
+                    "text": "Liang et al. (2019)",
+                    "ref_id": "BIBREF23"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Related work"
+        },
+        {
+            "text": "As mentioned before, the proposed methodology aims at accurate diagnosis of COVID-19 disease through performing concatenation between deep features extracted from X-ray and CT images. Initially, the input images are prepared appropriately through performing the image segmentation process to extract the Region Of Interest (ROI). Then, CNNs are used for the deep feature extraction process. Deep features are extracted in two different methods. For the first one, a simple proposed CNN extracts features from X-ray and CT images as presented in Fig. 1 . In the other method, three CNNs (the proposed CNN, ResNet-18, and GoogleNet) extract features from either X-ray or CT images as shown in Fig. 2 . Finally, the DFC methodology is applied to combine the extracted features into a single descriptor for classification. Some confirmed COVID-19 and non-COVID-19 images are given in Figs. 3 and 4 for CT and X-ray images, respectively. ",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 545,
+                    "end": 551,
+                    "text": "Fig. 1",
+                    "ref_id": "FIGREF0"
+                },
+                {
+                    "start": 691,
+                    "end": 697,
+                    "text": "Fig. 2",
+                    "ref_id": "FIGREF1"
+                }
+            ],
+            "section": "The proposed DFC methodology"
+        },
+        {
+            "text": "The image segmentation process is utilized to separate the pixels of interest and to locate the active contours of the lungs in input images (Michailovich et al. 2007 ). It can be performed with a snake in its intuitive manner, as it can be utilized to track objects. The contour is like a parametric curve V(s) = {X(s), Y(s)} , where X(s), and Y(s) are coordinate functions in a parametric domain \"s\". Active contour could be represented using an energy function as follows (Leymarie and Levine 1993) :",
+            "cite_spans": [
+                {
+                    "start": 141,
+                    "end": 166,
+                    "text": "(Michailovich et al. 2007",
+                    "ref_id": "BIBREF26"
+                },
+                {
+                    "start": 475,
+                    "end": 501,
+                    "text": "(Leymarie and Levine 1993)",
+                    "ref_id": "BIBREF22"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Image segmentation"
+        },
+        {
+            "text": "where E i internal and E i external are the internal and external energies at the i th position of the contour. The internal energy represents the contour strength as:",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Image segmentation"
+        },
+        {
+            "text": "where is the parameter that controls the snake tension and is the rigidity parameter. The external energy is responsible for moving the snake to the borders or ROI in an image. The external energy could be computed as: Figure 5 depicts examples of CT and X-ray images before and after performing the segmentation process.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 219,
+                    "end": 227,
+                    "text": "Figure 5",
+                    "ref_id": null
+                }
+            ],
+            "section": "Image segmentation"
+        },
+        {
+            "text": "(1)",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Image segmentation"
+        },
+        {
+            "text": "The process of feature extraction from images after segmentation is performed using CNNs. The CNNs are deep learning algorithms that contain multiple layers that are used for feature detection. These layers are convolutional, pooling, batch normalization, Rectified Linear Unit (ReLU), SoftMax, and fully-connected layers (Jmour et al. 2018b; Szegedy et al. 2015b) . The convolutional layer depends on a number of kernels of weights w l for each layer l to extract the local features from the input x l\u22121 as described in the following equation:",
+            "cite_spans": [
+                {
+                    "start": 322,
+                    "end": 342,
+                    "text": "(Jmour et al. 2018b;",
+                    "ref_id": "BIBREF19"
+                },
+                {
+                    "start": 343,
+                    "end": 364,
+                    "text": "Szegedy et al. 2015b)",
+                    "ref_id": "BIBREF40"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Deep feature extraction"
+        },
+        {
+            "text": "where C l is the output feature map obtained by computing the dot products between the kernels and the input with added bias b l .",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Deep feature extraction"
+        },
+        {
+            "text": "The pooling layer has two essential types: maximum and average pooling. The output of the pooling process P l is the down-sampled version of the entire feature map C l depending on the window size (m, n) as:",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Deep feature extraction"
+        },
+        {
+            "text": "The fully-connected layer is the last essential layer. Let the layer l-1 be the fully-connected layer. Layer l expects m (l\u22121) 1 feature maps having a size of m (l\u22121) 2 * m (l\u22121) 3 as input. The output of a fully-connected layer Y (l) i could be described as:",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Deep feature extraction"
+        },
+        {
+            "text": "where w (l) i,j,r,s represents the weights used to connect the position (r, s) in the i th unit in layer l and the jth feature map of layer l \u2212 1 . Here, we propose a new CNN model that includes three deep layers only to avoid issues such as complexity and large time consumption. Table 1 provides the architecture of the proposed model in detail.",
+            "cite_spans": [
+                {
+                    "start": 8,
+                    "end": 11,
+                    "text": "(l)",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 281,
+                    "end": 288,
+                    "text": "Table 1",
+                    "ref_id": "TABREF0"
+                }
+            ],
+            "section": "Deep feature extraction"
+        },
+        {
+            "text": "Feature concatenation is an effective way to add different features together to enhance the classification process. In this work, the DFC is applied in two different ways. In the first",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Deep feature concatenation (DFC)"
+        },
+        {
+            "text": "CT and X-ray images before and after performing the segmentation process for COVID-19 and Non-COVID-19 cases one, CT and X-ray features are extracted using the proposed CNN. Then, these features are linked to form the classification descriptor as:",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Fig. 5"
+        },
+        {
+            "text": "On the other hand, the second way aims to obtain remarkable results from each dataset (CT or X-ray), separately. This can",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Fig. 5"
+        },
+        {
+            "text": "be accomplished through extracting features from images using three different CNNs: the proposed, ResNet-18, and GoogleNet. These features are combined together using the DFC as follows: ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Fig. 5"
+        },
+        {
+            "text": "Classification output layer 2 ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Fig. 5"
+        },
+        {
+            "text": "The classification process depends on the final feature descriptor to determine whether the input image is positive or negative (Non-COVID-19). The fully-connected layer converts the input data into 1D vector. Then, the softmax layer calculates the scores of the classes as:",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Classification"
+        },
+        {
+            "text": "where f i denotes features and y i is the true class label of the i th image. w j and b j are the weights and bias of the j th class, respectively. N is the number of training samples and K is the number of classes.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Classification"
+        },
+        {
+            "text": "In this section, we discuss the results of the proposed DFC approach that could be implemented in two different methods. X-ray and CT image datasets are chosen to evaluate the proposed methodology (El-Shafai and El-Samie 2020). Each dataset includes positive (COVID) cases (2628 images) and negative (Non-COVID) cases (1620 images). For each class, images are divided into 70% for training and 30% for testing. Furthermore, the system performance is measured in terms of accuracy, precision, recall, and fscore. As discussed before, a new CNN model is proposed. In order to achieve its optimal performance, its hyper-parameters are adjusted including the optimization algorithm (Adam, RMS Prop, or SGDM), maximum number of epochs (30, 40, or 50), learning rate (LR) (0.001 or 0.0001), and Mini-Batch (MB) size (32, 64, or 128). Tables 2, 3, and 4 show the performance Figs. 7, 9, 11, 13, 15 , and 17 depict a graphical representation of the performance of the proposed model. In addition, the mean, variance, and standard deviation are also calculated. From the previous results, it can be deduced that to reach the optimal performance of the proposed model, the proposed CNN hyper-parameters are adjusted as follows: Fig. 9 Performance of the proposed CNN on CT dataset, max. Epochs = 40 These variables are adjusted with the mentioned values for each dataset during the implementation of the proposed approach. Now, the experimental results of the proposed approach (first method) will be discussed. Table 8 illustrates a comparison between the utilization of the proposed CNN to classify each dataset separately and the application of the proposed approach (first method) that combines both X-ray and CT features using DFC technique. The results in Table 8 confirm the superiority of the proposed approach and the improvement of the classification process as a result of the utilization of the DFC methodology. Additionally, Figure 18 shows a graphical comparison between the proposed CNN (CT Dataset), the proposed CNN (X-ray dataset), and the proposed approach (first method). In addition, Figures 19 and 20 present the ROC curves that demonstrate the superiority of the proposed DFC approach. The main purpose of the second method of the proposed DFC approach is to obtain distinctive results from each image dataset X-ray or CT by performing concatenation between the features extracted from the dataset. Features are extracted using three different CNNs, which are the proposed CNN, ResNet-18, and GoogleNet. The results of the proposed approach (second method) are compared with the results of single-stage methods (single stage (ResNet-18), single-stage (GoogleNet), and single-stage (Proposed CNN)). Tables 9 and 10 display these results for both X-ray and CT datasets, respectively. By analyzing the results in Tables 9 and 10, it is clear that the proposed approach for both CT and X-ray datasets, respectively. Finally, Table 11 provides a comparison between the proposed DFC approach and the state-of-the-art methodologies.",
+            "cite_spans": [
+                {
+                    "start": 868,
+                    "end": 876,
+                    "text": "Figs. 7,",
+                    "ref_id": null
+                },
+                {
+                    "start": 877,
+                    "end": 879,
+                    "text": "9,",
+                    "ref_id": null
+                },
+                {
+                    "start": 880,
+                    "end": 883,
+                    "text": "11,",
+                    "ref_id": null
+                },
+                {
+                    "start": 884,
+                    "end": 887,
+                    "text": "13,",
+                    "ref_id": null
+                },
+                {
+                    "start": 888,
+                    "end": 890,
+                    "text": "15",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 1218,
+                    "end": 1224,
+                    "text": "Fig. 9",
+                    "ref_id": null
+                },
+                {
+                    "start": 1502,
+                    "end": 1509,
+                    "text": "Table 8",
+                    "ref_id": "TABREF7"
+                },
+                {
+                    "start": 1752,
+                    "end": 1759,
+                    "text": "Table 8",
+                    "ref_id": "TABREF7"
+                },
+                {
+                    "start": 1928,
+                    "end": 1937,
+                    "text": "Figure 18",
+                    "ref_id": "FIGREF0"
+                },
+                {
+                    "start": 2095,
+                    "end": 2112,
+                    "text": "Figures 19 and 20",
+                    "ref_id": "FIGREF0"
+                },
+                {
+                    "start": 2934,
+                    "end": 2942,
+                    "text": "Table 11",
+                    "ref_id": "TABREF0"
+                }
+            ],
+            "section": "Results and discussions"
+        },
+        {
+            "text": "These results also prove the superiority of the proposed DFC approach in accurately diagnosing the COVID-19 disease.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Results and discussions"
+        },
+        {
+            "text": "The COVID-19 has been considered as a life-threatening disease that affects lungs. Hence, the rapid diagnosis of COVID-19 has become a vital necessity. In this paper, a CNN-based DFC approach has been presented. It adopts Fig. 13 Performance of the Proposed CNN using X-ray Dataset, max. Epochs = 30 ",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 222,
+                    "end": 229,
+                    "text": "Fig. 13",
+                    "ref_id": "FIGREF0"
+                }
+            ],
+            "section": "Conclusions"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "Intelligent medical record management: a diagnosis support system",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Amato",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Cozzolino",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Mazzeo",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Romano",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Int J High Perform Comput Netw",
+            "volume": "12",
+            "issn": "4",
+            "pages": "391--399",
+            "other_ids": {}
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "Association of peritumoral radiomics with tumor biology and pathologic response to preoperative targeted therapy for her2 (erbb2)-positive breast cancer",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Braman",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Prasanna",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Whitney",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Singh",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Beig",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Etesami",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Bates",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Gallagher",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "N"
+                    ],
+                    "last": "Bloch",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Vulchi",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "JAMA Netw Open",
+            "volume": "2",
+            "issn": "4",
+            "pages": "192561--192561",
+            "other_ids": {}
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "Big data deep learning: challenges and perspectives",
+            "authors": [
+                {
+                    "first": "X",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Lin",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "IEEE Access",
+            "volume": "2",
+            "issn": "",
+            "pages": "514--525",
+            "other_ids": {}
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "Deep learning based automatic immune cell detection for immunohistochemistry images",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Chefdhotel",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "International workshop on machine learning in medical imaging",
+            "volume": "",
+            "issn": "",
+            "pages": "17--24",
+            "other_ids": {}
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "Computer-aided diagnosis with deep learning architecture: applications to breast lesions in us images and pulmonary nodules in ct scans",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "Z"
+                    ],
+                    "last": "Cheng",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Ni",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Chou",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Qin",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Tiu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Chang",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Huang",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Shen",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Chen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Sci Rep",
+            "volume": "6",
+            "issn": "1",
+            "pages": "1--13",
+            "other_ids": {}
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "Enhancing the security of exchanging and storing dicom medical images on the cloud",
+            "authors": [
+                {
+                    "first": "O",
+                    "middle": [],
+                    "last": "Dorgham",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Al-Rahamneh",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Almomani",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Khatatneh",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Int J Cloud Appl Comput (IJCAC)",
+            "volume": "8",
+            "issn": "1",
+            "pages": "154--172",
+            "other_ids": {}
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "Selective feature connection mechanism: concatenating multi-layer cnn features with a feature selector",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Du",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Shi",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Xiao",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Pattern Recogn Lett",
+            "volume": "129",
+            "issn": "",
+            "pages": "108--114",
+            "other_ids": {}
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "Going deeper with convolutions",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "El-Shafai",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "El-Samie",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Extensive and Augmented COVID-19 X-Ray and CT Chest Images Dataset",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.17632/8h65ywd2jr.2"
+                ]
+            }
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "Dermatologist-level classification of skin cancer with deep neural networks",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Esteva",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Kuprel",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Novoa",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Ko",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Swetter",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Blau",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Thrun",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Nature",
+            "volume": "542",
+            "issn": "7639",
+            "pages": "115--118",
+            "other_ids": {}
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "Covid-resnet: a deep learning framework for screening of covid19 from radiographs",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Farooq",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Hafeez",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "Medical image forgery detection for smart healthcare",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Ghoneim",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Muhammad",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "U"
+                    ],
+                    "last": "Amin",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Gupta",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "IEEE Commun Mag",
+            "volume": "56",
+            "issn": "4",
+            "pages": "33--37",
+            "other_ids": {}
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "Nuclei segmentation for quantification of brain tumors in digital pathology images",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Guo",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Evans",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Bhattacharya",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Int J Softw Sci Comput Intell (IJSSCI)",
+            "volume": "10",
+            "issn": "2",
+            "pages": "36--49",
+            "other_ids": {}
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "Finding covid-19 from chest x-rays using deep learning on a small dataset",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [
+                        "O"
+                    ],
+                    "last": "Hall",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Paul",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Goldgof",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Goldgof",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "Deep residual learning for image recognition",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "He",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Ren",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Sun",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Proceedings of the IEEE conference on computer vision and pattern recognition",
+            "volume": "",
+            "issn": "",
+            "pages": "770--778",
+            "other_ids": {}
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "Clinical features of patients infected with 2019 novel coronavirus in Wuhan",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Huang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Ren",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Zhao",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Hu",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Fan",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Xu",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Gu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "China. The Lancet",
+            "volume": "395",
+            "issn": "",
+            "pages": "497--506",
+            "other_ids": {}
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "Densely connected convolutional networks",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Huang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Van Der Maaten",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "Q"
+                    ],
+                    "last": "Weinberger",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Proceedings of the IEEE conference on computer vision and pattern recognition",
+            "volume": "",
+            "issn": "",
+            "pages": "4700--4708",
+            "other_ids": {}
+        },
+        "BIBREF16": {
+            "ref_id": "b16",
+            "title": "Squeezenet: alexnet-level accuracy with 50x fewer parameters and< 0.5 mb model size",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [
+                        "N"
+                    ],
+                    "last": "Iandola",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Han",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Moskewicz",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Ashraf",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Dally",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Keutzer",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF17": {
+            "ref_id": "b17",
+            "title": "Ai-assisted ct imaging analysis for covid-19 screening: building and deploying a medical ai system in four weeks",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Jin",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Xu",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Luo",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Wei",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Zhao",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Hou",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Ma",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Xu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Zheng",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF18": {
+            "ref_id": "b18",
+            "title": "Convolutional neural networks for image classification",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Jmour",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Zayen",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Abdelkrim",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "2018 International Conference on Advanced Systems and Electric Technologies (IC\\_ASET)",
+            "volume": "",
+            "issn": "",
+            "pages": "397--402",
+            "other_ids": {}
+        },
+        "BIBREF19": {
+            "ref_id": "b19",
+            "title": "Convolutional neural networks for image classification",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Jmour",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Zayen",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Abdelkrim",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "2018 International Conference on Advanced Systems and Electric Technologies (IC\\_ASET)",
+            "volume": "",
+            "issn": "",
+            "pages": "397--402",
+            "other_ids": {}
+        },
+        "BIBREF20": {
+            "ref_id": "b20",
+            "title": "Imagenet classification with deep convolutional neural networks",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Krizhevsky",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Sutskever",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Hinton",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "Adv Neural Inform Process Syst",
+            "volume": "25",
+            "issn": "",
+            "pages": "1097--1105",
+            "other_ids": {}
+        },
+        "BIBREF21": {
+            "ref_id": "b21",
+            "title": "Lenet-5",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Lecun",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "convolutional neural networks",
+            "volume": "20",
+            "issn": "5",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF22": {
+            "ref_id": "b22",
+            "title": "Tracking deformable objects in the plane using an active contour model",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Leymarie",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Levine",
+                    "suffix": ""
+                }
+            ],
+            "year": 1993,
+            "venue": "IEEE Trans Pattern Anal Mach Intell",
+            "volume": "15",
+            "issn": "6",
+            "pages": "617--634",
+            "other_ids": {}
+        },
+        "BIBREF23": {
+            "ref_id": "b23",
+            "title": "Mcfnet: multi-layer concatenation fusion network for medical images fusion",
+            "authors": [
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Liang",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Hu",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Sun",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Yin",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "IEEE Sens J",
+            "volume": "19",
+            "issn": "16",
+            "pages": "7107--7119",
+            "other_ids": {}
+        },
+        "BIBREF24": {
+            "ref_id": "b24",
+            "title": "Artificial intelligence distinguishes covid-19 from community acquired pneumonia on chest ct",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Qin",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Xu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Yin",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Kong",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Bai",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Lu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Fang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Song",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF25": {
+            "ref_id": "b25",
+            "title": "Multi-layers feature fusion of convolutional neural network for scene classification of remote sensing",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Ma",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Mu",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Sha",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "IEEE Access",
+            "volume": "7",
+            "issn": "",
+            "pages": "121685--121694",
+            "other_ids": {}
+        },
+        "BIBREF26": {
+            "ref_id": "b26",
+            "title": "Image segmentation using active contours driven by the bhattacharyya gradient flow",
+            "authors": [
+                {
+                    "first": "O",
+                    "middle": [],
+                    "last": "Michailovich",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Rathi",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Tannenbaum",
+                    "suffix": ""
+                }
+            ],
+            "year": 2007,
+            "venue": "IEEE Trans Image Process",
+            "volume": "16",
+            "issn": "11",
+            "pages": "2787--2801",
+            "other_ids": {}
+        },
+        "BIBREF27": {
+            "ref_id": "b27",
+            "title": "Deep learning applications and challenges in big data analytics",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Najafabadi",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Villanustre",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Khoshgoftaar",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Seliya",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Wald",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Muharemagic",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "J Big Data",
+            "volume": "2",
+            "issn": "1",
+            "pages": "1--21",
+            "other_ids": {}
+        },
+        "BIBREF28": {
+            "ref_id": "b28",
+            "title": "Automatic detection of coronavirus disease (covid-19) using x-ray images and deep convolutional neural networks",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Narin",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Kaya",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Pamuk",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF29": {
+            "ref_id": "b29",
+            "title": "Deep cnns for microscopic image classification by exploiting transfer learning and feature concatenation",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Nguyen",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Lin",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Lin",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Cao",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "2018 IEEE International Symposium on Circuits and Systems (ISCAS)",
+            "volume": "",
+            "issn": "",
+            "pages": "1--5",
+            "other_ids": {}
+        },
+        "BIBREF30": {
+            "ref_id": "b30",
+            "title": "A deep learning model based on concatenation approach for the diagnosis of brain tumor",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Noreen",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Palaniappan",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Qayyum",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Ahmad",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Imran",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Shoaib",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "IEEE Access",
+            "volume": "8",
+            "issn": "",
+            "pages": "55135--55144",
+            "other_ids": {}
+        },
+        "BIBREF31": {
+            "ref_id": "b31",
+            "title": "A self-adaptive quantum steganography algorithm based on qlsb modification in watermarked quantum image",
+            "authors": [
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Qu",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "He",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Ma",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Int J High Perform Comput Network",
+            "volume": "14",
+            "issn": "2",
+            "pages": "121--129",
+            "other_ids": {}
+        },
+        "BIBREF32": {
+            "ref_id": "b32",
+            "title": "A modified deep convolutional neural network for detecting covid-19 and pneumonia from chest x-ray images based on the concatenation of xception and resnet50v2",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Rahimzadeh",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Attar",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Inform Med Unlock",
+            "volume": "19",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF33": {
+            "ref_id": "b33",
+            "title": "Multi-grade brain tumor classification using deep cnn with extensive data augmentation",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Sajjad",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Khan",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Muhammad",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Wu",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Ullah",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Baik",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "J Comput Sci",
+            "volume": "30",
+            "issn": "",
+            "pages": "174--182",
+            "other_ids": {}
+        },
+        "BIBREF34": {
+            "ref_id": "b34",
+            "title": "Mobile-netv2: Inverted residuals and linear bottlenecks",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Sandler",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Howard",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Zhu",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Zhmoginov",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Chen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Proceedings of the IEEE conference on computer vision and pattern recognition",
+            "volume": "",
+            "issn": "",
+            "pages": "4510--4520",
+            "other_ids": {}
+        },
+        "BIBREF35": {
+            "ref_id": "b35",
+            "title": "Going deeper in spiking neural networks: Vgg and residual architectures",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Sengupta",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Ye",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Roy",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Front Neurosci",
+            "volume": "13",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF36": {
+            "ref_id": "b36",
+            "title": "Large-scale screening of covid-19 from community acquired pneumonia using infection size-aware classification",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Shi",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Xia",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Shan",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Wu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Wei",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Yuan",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Jiang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Gao",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Sui",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Shen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF37": {
+            "ref_id": "b37",
+            "title": "A review of coronavirus disease-2019 (covid-19)",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Singhal",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Indian J Pediatr",
+            "volume": "87",
+            "issn": "4",
+            "pages": "281--286",
+            "other_ids": {}
+        },
+        "BIBREF38": {
+            "ref_id": "b38",
+            "title": "Deep convolutional neural networks for pairwise causality",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Singh",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Gupta",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Vig",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Shroff",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Agarwal",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF39": {
+            "ref_id": "b39",
+            "title": "Deep learning enables accurate diagnosis of novel coronavirus (covid-19) with ct images",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Song",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Zheng",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Huang",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Zhao",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Jie",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Proceedings of the IEEE conference on computer vision and pattern recognition",
+            "volume": "",
+            "issn": "",
+            "pages": "1--9",
+            "other_ids": {}
+        },
+        "BIBREF40": {
+            "ref_id": "b40",
+            "title": "Going deeper with convolutions",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Szegedy",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Jia",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Sermanet",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Reed",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Anguelov",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Erhan",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Vanhoucke",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Rabinovich",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Proceedings of the IEEE conference on computer vision and pattern recognition",
+            "volume": "",
+            "issn": "",
+            "pages": "1--9",
+            "other_ids": {}
+        },
+        "BIBREF41": {
+            "ref_id": "b41",
+            "title": "Efficientnet: rethinking model scaling for convolutional neural networks",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Tan",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Le",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "International Conference on Machine Learning",
+            "volume": "",
+            "issn": "",
+            "pages": "6105--6114",
+            "other_ids": {}
+        },
+        "BIBREF42": {
+            "ref_id": "b42",
+            "title": "Chest ct for typical coronavirus disease 2019 (covid-19) pneumonia: relationship to negative rt-pcr testing",
+            "authors": [
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Xie",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Zhong",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Zhao",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Zheng",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Radiology",
+            "volume": "296",
+            "issn": "2",
+            "pages": "41--45",
+            "other_ids": {}
+        },
+        "BIBREF43": {
+            "ref_id": "b43",
+            "title": "Chest ct for typical coronavirus disease 2019 (covid-19) pneumonia: relationship to negative rt-pcr testing",
+            "authors": [
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Xie",
+                    "suffix": ""
+                },
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Zhong",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Zhao",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Zheng",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Radiology",
+            "volume": "296",
+            "issn": "2",
+            "pages": "41--45",
+            "other_ids": {}
+        },
+        "BIBREF44": {
+            "ref_id": "b44",
+            "title": "A deep learning system to screen novel coronavirus disease",
+            "authors": [
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Xu",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Jiang",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Ma",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Du",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Lv",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Yu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Ni",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Su",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "pneumonia. Engineering",
+            "volume": "6",
+            "issn": "10",
+            "pages": "1122--1129",
+            "other_ids": {}
+        },
+        "BIBREF45": {
+            "ref_id": "b45",
+            "title": "A lightweight authenticated encryption scheme based on chaotic scml for railway cloud service",
+            "authors": [
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Zheng",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Khan",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Gupta",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Guo",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "IEEE Access",
+            "volume": "6",
+            "issn": "",
+            "pages": "711--722",
+            "other_ids": {}
+        },
+        "BIBREF46": {
+            "ref_id": "b46",
+            "title": "Deep learning-based detection for covid-19 from chest ct using weak label",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Zheng",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Deng",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Fu",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Zhou",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Feng",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Ma",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF47": {
+            "ref_id": "b47",
+            "title": "A novel coronavirus from patients with pneumonia in china, 2019. N Engl J Med Publisher's Note Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Zhu",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Yang",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Song",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Zhao",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Huang",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Shi",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Lu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        }
+    },
+    "ref_entries": {
+        "FIGREF0": {
+            "text": "The main architecture of the proposed approach, first method",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF1": {
+            "text": "The main architecture of the proposed approach, second methodFig. 3 CT images a COVID-19, and b Non-COVID-19 Fig. 4 X-ray images a COVID-19, and b Non-COVID-19",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF2": {
+            "text": "Accuracy vs. iterations and loss vs. iterations for the proposed CNN on the CT dataset using Adam algorithm for optimization, max number of epochs = 30, MB size = 64, and LR = 0.Performance of the proposed CNN on the CT dataset, max. number of epochs = 30",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF3": {
+            "text": "Accuracy vs. iterations and loss vs. iterations of the proposed CNN on CT dataset using: Rmsprop algorithm for optimization, max. Epochs = 50, M-B size = 64, and LR = 0.0001 Fig. 11 Performance of the proposed CNN on CT dataset, max. Epochs = 50",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF4": {
+            "text": "Graphical comparison between the proposed CNN (CT Dataset), the proposed CNN (X-ray Dataset), and the proposed approach (first method) Fig. 19 ROC curves of the Proposed CNN (CT Dataset) and the Proposed DFC methodologies Fig. 20 ROC curves of the Proposed CNN (X-ray Dataset) and the Proposed DFC methodologies",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF5": {
+            "text": "Accuracy vs. iterations of the Proposed Approach DFC (second method) for CT dataset Fig. 22 Loss vs. iterations of the Proposed Approach DFC (second method) for CT datasetFig. 23 Accuracy vs. iterations of the Proposed Approach DFC (second method) for X-ray dataset Fig. 24 Loss vs. iterations of the Proposed Approach DFC (second method) for X-ray dataset Fig. 25 ROC curves of the Proposed Approach DFC (second method) for CT dataset Fig. 26 ROC curves of the Proposed Approach DFC (second method) for X-ray dataset",
+            "latex": null,
+            "type": "figure"
+        },
+        "TABREF0": {
+            "text": "",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF1": {
+            "text": "",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF2": {
+            "text": "",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF3": {
+            "text": "",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF4": {
+            "text": "",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF5": {
+            "text": "the concatenation process of the extracted deep features of X-ray and CT images. The proposed approach has been implemented in two different ways. In the first way, X-ray and CT image features are extracted by the proposed CNN. Then, these features are combined to form the classification descriptor. This way has achieved an accuracy of 96.13% , a precision of 94.37% , a recall of 97.04% , and an f_score of 95.69% . The second way has been mainly intended to enhance the results for either X-ray or CT dataset. This could be accomplished by using three CNNs (the proposed CNN, GoogleNet, and ResNet-18) to extract features. Then, the DFC has been applied on these features to obtain the classification descriptor. For CT images, this way has achieved an accuracy of 98.9% , a precision of 99.36% , a recall of 98.5% , and an f_score of 98.92% . For X-ray images, this way has attained an accuracy of 99.3% , a precision of 99.79% , a recall of 98.8% , and an f_score of 99.3% . Hence, the proposed approach can be used efficiently for the diagnosis of COVID-19 cases from medical images.Fig. 15 Performance of the Proposed CNN using X-ray Dataset, max. Epochs = 40",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF6": {
+            "text": "Performance of the Proposed CNN using X-ray Dataset, max. Epochs = 50. (%) Fig. 16 Accuracy vs. iterations and loss vs. iterations of the proposed CNN for X-ray dataset using: Rmsprop algorithm for optimization, max. Epochs = 50, MB size = 32, and LR = 0.001 Fig. 17 Performance of the Proposed CNN using X-ray Dataset, max. Epochs = 50",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF7": {
+            "text": "Performance of the proposed approach (first method). (%)",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF8": {
+            "text": "Performance of the proposed approach (second method) for CT dataset. (%)",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF9": {
+            "text": "Performance of the proposed approach (second method) for X-ray dataset (%)",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": [
+        {
+            "text": "Conflict of interest The authors declare that they have no conflict of interest. ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Compliance with ethical standards"
+        }
+    ]
+}
