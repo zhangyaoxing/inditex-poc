@@ -2,6 +2,7 @@ from sentence_transformers import SentenceTransformer
 from pymongo.mongo_client import MongoClient
 from pymongo import UpdateOne
 import os
+import time
 
 BATCH_SIZE = 10
 uri = os.environ['uri']
@@ -15,11 +16,12 @@ total = 0
 
 
 model = SentenceTransformer('firqaaa/indo-sentence-bert-large')
-model.save(local_path)
-model = SentenceTransformer(local_path)
+# model.save(local_path)
+# model = SentenceTransformer(local_path)
 
 def batch_save(sentences, ids):
     global total
+    ms = time.time_ns()
     # get embeddings
     embeddings = model.encode(sentences)
     print("Embeddings generated for: " + str(BATCH_SIZE) + " Items")
@@ -36,8 +38,9 @@ def batch_save(sentences, ids):
             }
         }))
     collection.bulk_write(operations)
+    ms = (time.time_ns() - ms) / 1000000
     total += len(sentences)
-    print(str(total) + " items saved to database.")
+    print(str(total) + " items saved to database. Total time spent: " + str(ms) + "ms")
 
 sentences = []
 ids = []
