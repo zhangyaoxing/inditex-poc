@@ -15,6 +15,9 @@ docs = collection.find({"embedding": {"$exists": False}})
 total = 0
 
 def batch_save(sentences, ids):
+    # get embeddings
+    embeddings = model.encode(sentences)
+    print("Embeddings generated for: " + BATCH_SIZE + " Items")
     for i in range(0, BATCH_SIZE): 
         # conver date type from pynum.float to float
         embedding = []
@@ -29,7 +32,7 @@ def batch_save(sentences, ids):
         }))
     collection.bulk_write(operations)
     total += len(sentences)
-    print("Total embedding generated: " + total)
+    print(total + " items saved to database.")
 
 sentences = []
 ids = []
@@ -40,8 +43,6 @@ for doc in docs:
     ids.append(doc["_id"])
     counter += 1
     if counter == BATCH_SIZE:
-        # get embeddings
-        embeddings = model.encode(sentences)
         # batch save embeddings to MongoDB
         batch_save(sentences, ids)
         # clean up
