@@ -15,9 +15,9 @@ docs = collection.find({"embedding": {"$exists": False}})
 total = 0
 
 
-model = SentenceTransformer('firqaaa/indo-sentence-bert-large')
+# model = SentenceTransformer('firqaaa/indo-sentence-bert-large')
 # model.save(local_path)
-# model = SentenceTransformer(local_path)
+model = SentenceTransformer(local_path)
 
 def batch_save(sentences, ids):
     global total
