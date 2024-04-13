@@ -15,6 +15,7 @@ docs = collection.find({"embedding": {"$exists": False}})
 total = 0
 
 def batch_save(sentences, ids):
+    global total
     # get embeddings
     embeddings = model.encode(sentences)
     print("Embeddings generated for: " + str(BATCH_SIZE) + " Items")
