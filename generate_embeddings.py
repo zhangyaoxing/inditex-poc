@@ -4,15 +4,19 @@ from pymongo import UpdateOne
 import os
 
 BATCH_SIZE = 10
-model = SentenceTransformer('firqaaa/indo-sentence-bert-large')
-
 uri = os.environ['uri']
 db = os.environ['db']
 coll = os.environ['coll']
+local_path = os.environ['local_path']
 client = MongoClient(uri)
 collection = client[db][coll]
 docs = collection.find({"embedding": {"$exists": False}})
 total = 0
+
+
+model = SentenceTransformer('firqaaa/indo-sentence-bert-large')
+model.save(local_path)
+model = SentenceTransformer(local_path)
 
 def batch_save(sentences, ids):
     global total
