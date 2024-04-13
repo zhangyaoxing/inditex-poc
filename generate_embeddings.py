@@ -3,7 +3,7 @@ from pymongo.mongo_client import MongoClient
 from pymongo import UpdateOne
 import os
 
-BATCH_SIZE = 100
+BATCH_SIZE = 10
 model = SentenceTransformer('firqaaa/indo-sentence-bert-large')
 
 uri = os.environ['uri']
@@ -17,7 +17,7 @@ total = 0
 def batch_save(sentences, ids):
     # get embeddings
     embeddings = model.encode(sentences)
-    print("Embeddings generated for: " + BATCH_SIZE + " Items")
+    print("Embeddings generated for: " + str(BATCH_SIZE) + " Items")
     for i in range(0, BATCH_SIZE): 
         # conver date type from pynum.float to float
         embedding = []
@@ -32,7 +32,7 @@ def batch_save(sentences, ids):
         }))
     collection.bulk_write(operations)
     total += len(sentences)
-    print(total + " items saved to database.")
+    print(str(total) + " items saved to database.")
 
 sentences = []
 ids = []
