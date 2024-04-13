@@ -1,6 +1,6 @@
 # Inditex POC
 ## Test Dataset
-- We are using the [covid-19 research challenge dataset](https://www.kaggle.com/datasets/allen-institute-for-ai/CORD-19-research-challenge) for testing.
+- We are using the [CORD-19](https://www.kaggle.com/datasets/allen-institute-for-ai/CORD-19-research-challenge) (COVID-19 Open Research Dataset Challenge) dataset for testing.
 - The data used in the POC is from the `./document_parses/pdf_json` folder.
 
 Note this is a 20GB huge dataset. >100GB when unzipped. Make sure you have enough space to hold everything.
