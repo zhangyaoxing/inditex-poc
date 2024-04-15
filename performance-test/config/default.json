@@ -1,0 +1,7 @@
+{
+    "uri": "mongodb+srv://cluster0.wy1z6.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
+    "idRange": {
+        "min": "66195903b5902fcc04d74537",
+        "max": "6619439e4728952eae60aeb8"
+    }
+}
