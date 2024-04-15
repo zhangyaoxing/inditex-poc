@@ -11,12 +11,12 @@ coll = os.environ['coll']
 local_path = os.environ['local_path']
 client = MongoClient(uri)
 collection = client[db][coll]
-docs = collection.find({"embedding": {"$exists": False}})
+docs = collection.find({"computed": False}, no_cursor_timeout=True)
 total = 0
 
 
-# model = SentenceTransformer('firqaaa/indo-sentence-bert-large')
-# model.save(local_path)
+model = SentenceTransformer('firqaaa/indo-sentence-bert-large')
+model.save(local_path)
 model = SentenceTransformer(local_path)
 
 def batch_save(sentences, ids):
@@ -34,7 +34,8 @@ def batch_save(sentences, ids):
             "_id": ids[i]
         }, {
             "$set": {
-                "embedding": embedding
+                "embedding": embedding,
+                "computed": True
             }
         }))
     collection.bulk_write(operations)
