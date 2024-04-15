@@ -22,10 +22,11 @@ model = SentenceTransformer(local_path)
 def batch_save(sentences, ids):
     global total
     ms = time.time_ns()
+    length = len(sentences)
     # get embeddings
     embeddings = model.encode(sentences)
-    print("Embeddings generated for: " + str(BATCH_SIZE) + " Items")
-    for i in range(0, BATCH_SIZE): 
+    print("Embeddings generated for: " + str(length) + " Items")
+    for i in range(0, length): 
         # conver date type from pynum.float to float
         embedding = []
         for num in embeddings[i]: 
