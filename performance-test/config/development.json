@@ -1,0 +1,5 @@
+{
+    "uri": "mongodb+srv://vs_user:6YxGRaNruUp6xOg2@cluster0.wy1z6.mongodb.net/covid?retryWrites=true&w=majority&appName=Cluster0",
+    "env": "development",
+    "port": 80
+}
