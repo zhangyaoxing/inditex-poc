@@ -130,4 +130,4 @@ dist
 .pnp.*
 
 # custom
-.indo-sentence-bert-large/
+production.json

@@ -8,12 +8,17 @@ var app = require('../app');
 var debug = require('debug')('performance-test:server');
 var http = require('http');
 var getDB = require("../lib/mongodb").getDB;
+var config = require("config");
+var env = config.env;
+
+console.log(`Using config file: ${env}`);
 
 /**
  * Get port from environment and store in Express.
  */
 
-var port = normalizePort(process.env.PORT || '3000');
+// var port = normalizePort(process.env.PORT || '3000');
+port = config.port;
 app.set('port', port);
 
 /**
@@ -29,6 +34,7 @@ getDB().then(() => {
   server.listen(port);
   server.on('error', onError);
   server.on('listening', onListening);
+  console.log(`Now listening at: ${port}`);
 }).catch(console.dir);
 
 /**
