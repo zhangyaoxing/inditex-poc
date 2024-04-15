@@ -4,7 +4,7 @@ from pymongo import UpdateOne
 import os
 import time
 
-BATCH_SIZE = 10
+BATCH_SIZE = 100
 uri = os.environ['uri']
 db = os.environ['db']
 coll = os.environ['coll']
