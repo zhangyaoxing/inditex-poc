@@ -32,16 +32,18 @@ var getEmbeddingInternal = async function(oid) {
 
     return embedding;
 }
-console.log(`Sampling the collection to get ${numSamples} embeddings.`);
 var sampleEmbeddings = [];
-for(var i = 0; i < numSamples; i++) {
-    var oid = getRandomId();
-    getEmbeddingInternal(oid).then(embedding => {
-        sampleEmbeddings.push(embedding);
-    });
-}
 
 module.exports = {
+    initialize: async function() {
+        console.log(`Sampling the collection to get ${numSamples} embeddings.`);
+        for(var i = 0; i < numSamples; i++) {
+            var oid = getRandomId();
+            var embedding = await getEmbeddingInternal(oid);
+            sampleEmbeddings.push(embedding);
+        }
+        console.log(`${numSamples} embeddings sampled.`);
+    },
     getRandomEmbedding: function() {
         var index = Math.floor(Math.random() * numSamples);
         return sampleEmbeddings[index];
@@ -62,7 +64,7 @@ module.exports = {
             }
         }];
         var result = await db.collection("paper").aggregate(pipeline).toArray();
-        console.debug(result);
+        // console.debug(result);
         return result;
     }
 };
