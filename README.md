@@ -46,3 +46,46 @@ This is an example of the final document structure:
   "section": "Editor"
 }
 ```
+
+## Peroformance Test
+### The Logic
+- The application first load `numSamples` documents from the collection. The `embedding` in these documents will be used for later use.
+- When a request arrives,
+  - The application will randomly get 1 embedding from the previously loaded embeddings.
+  - Use the embedding to do vector search.
+  - The search result will return `limit` of `numCandidates`.
+
+### Dependencies
+- NodeJS v18.
+- Source code in `/performance-test` folder.
+- Packages and tools:
+```bash
+cd performance-test
+npm install
+npm install -g pm2
+```
+
+### Run
+To start:
+```bash
+pm2 start bin/www -i max --watch
+```
+To review logs:
+```bash
+pm2 log www
+```
+To stop:
+```bash
+pm2 stop www
+```
+To remove
+```bash
+pm2 delete www
+```
+
+### Test
+Apache ab is used for testing
+```bash
+yum install httpd
+ab -n 100 -c 1 http://localhost/vector-search
+```

@@ -9,29 +9,42 @@ var maxTime = maxId.getTimestamp().getTime();
 var time = maxTime - minTime;
 var numCandidates = config.numCandidates;
 var limit = config.limit;
-
+var numSamples = config.numSamples;
 console.log(`_id range set to ${minId.toHexString()}~${maxId.toHexString()}`);
 
+var getRandomId = function() {
+    var timestamp = Math.floor((minTime + Math.random() * time) / 1000);
+    var hex = timestamp.toString(16) + "0000000000000000";
+    console.debug(`ObjectId generated: ${hex}`);
+
+    return ObjectId.createFromHexString(hex);
+};
+var getEmbeddingInternal = async function(oid) {
+    var db = await getDB();
+    var doc = await db.collection("paper").findOne({
+        _id: {
+            "$gte": oid
+        }
+    });
+    var embedding = doc.embedding;
+    console.debug(`Document found: ${doc._id}`);
+    console.debug(`Embedding: [${embedding[1]},...,${embedding[embedding.length - 1]}]`);
+
+    return embedding;
+}
+console.log(`Sampling the collection to get ${numSamples} embeddings.`);
+var sampleEmbeddings = [];
+for(var i = 0; i < numSamples; i++) {
+    var oid = getRandomId();
+    getEmbeddingInternal(oid).then(embedding => {
+        sampleEmbeddings.push(embedding);
+    });
+}
+
 module.exports = {
-    getRandomId: function() {
-        var timestamp = Math.floor((minTime + Math.random() * time) / 1000);
-        var hex = timestamp.toString(16) + "0000000000000000";
-        console.debug(`ObjectId generated: ${hex}`);
-
-        return ObjectId.createFromHexString(hex);
-    },
-    getEmbedding: async function(oid) {
-        var db = await getDB();
-        var doc = await db.collection("paper").findOne({
-            _id: {
-                "$gte": oid
-            }
-        });
-        var embedding = doc.embedding;
-        console.debug(`Document found: ${doc._id}`);
-        console.debug(`Embedding: [${embedding[1]},...,${embedding[embedding.length - 1]}]`);
-
-        return embedding;
+    getRandomEmbedding: function() {
+        var index = Math.floor(Math.random() * numSamples);
+        return sampleEmbeddings[index];
     },
     vectorSearch: async function(embedding) {
         var db = await getDB();
@@ -52,4 +65,4 @@ module.exports = {
         console.debug(result);
         return result;
     }
-}
+};
