@@ -49,11 +49,12 @@ This is an example of the final document structure:
 
 ## Peroformance Test
 ### The Logic
-- The application first load `numSamples` documents from the collection. The `embedding` in these documents will be used for later use.
+- The application first load `numSamples` documents from the collection. The `embedding` in these documents will be used for later test.
 - When a request arrives,
   - The application will randomly get 1 embedding from the previously loaded embeddings.
   - Use the embedding to do vector search.
   - The search result will return `limit` of `numCandidates`.
+- The full document (without embedding because it's big and is usually useless to the client) will be returned to the client.
 
 ### Dependencies
 - NodeJS v18.
